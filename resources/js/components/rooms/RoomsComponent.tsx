@@ -13,7 +13,7 @@ const RoomsComponent = () => {
       features: ["Lit simple", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée"],
       size: "15 m²",
       capacity: "1 personne",
-      image: "/assets/images/rooms/single-room.jpg" 
+      image: "https://images.unsplash.com/photo-1600607686527-6fb886090705" 
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const RoomsComponent = () => {
       features: ["Lit double", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision"],
       size: "22 m²",
       capacity: "2 personnes",
-      image: "/assets/images/rooms/double-room.jpg" 
+      image: "https://images.unsplash.com/photo-1548013146-72479768bada" 
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const RoomsComponent = () => {
       features: ["2 lits simples", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision"],
       size: "22 m²",
       capacity: "2 personnes",
-      image: "/assets/images/rooms/twin-room.jpg" 
+      image: "https://images.unsplash.com/photo-1558981285-6f0c94958bb6" 
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ const RoomsComponent = () => {
       features: ["2 lits doubles", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision", "Espace salon"],
       size: "35 m²",
       capacity: "4 personnes",
-      image: "/assets/images/rooms/family-room.jpg" 
+      image: "https://images.unsplash.com/photo-1548013146-72479768bada" 
     }
   ];
 
@@ -116,7 +116,7 @@ const RoomsComponent = () => {
                 <div className="relative h-48 sm:h-52 md:h-56 overflow-hidden bg-gradient-to-br from-[#D4B896]/20 to-[#6B3410]/20">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10" />
                   <div className="w-full h-full flex items-center justify-center">
-                    <Icon className="w-20 h-20 text-[#D4B896] opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
+                    <img src={room.image} alt={room.name} />
                   </div>
                   
                   {/* Price Badge */}
