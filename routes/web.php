@@ -8,5 +8,5 @@ Route::get('/', function() {
 });
 
 Route::get('/decouvrir-tanger', function() {
-    return inertia('DiscoverTanger');
+    return inertia('DiscoverTangerPage');
 });
