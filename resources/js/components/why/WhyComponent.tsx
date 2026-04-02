@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import {
   Wifi,
@@ -8,33 +7,7 @@ import {
   Coffee,
   ConciergeBell,
 } from "lucide-react";
-
-const features = [
-  {
-    icon: BedDouble,
-    text: "Toutes les chambres sont équipées de salles de bain privatives",
-  },
-  {
-    icon: ConciergeBell,
-    text: "Réception ouverte 24h/24 avec un personnel multilingue",
-  },
-  {
-    icon: Wifi,
-    text: "Connexion Wi-Fi haut débit gratuite",
-  },
-  {
-    icon: Users,
-    text: "Salon commun convivial pour vous détendre",
-  },
-  {
-    icon: Car,
-    text: "Parking privé disponible à proximité",
-  },
-  {
-    icon: Coffee,
-    text: "Terrasse avec vue panoramique sur la ville",
-  },
-];
+import { useI18n } from '@/contexts/I18nContext';
 
 const containerVariants = {
   hidden: {},
@@ -51,6 +24,19 @@ const itemVariants = {
 };
 
 const WhyComponent = () => {
+  const { t } = useI18n();
+  
+  const whyContent = t.whyModule || {};
+  
+  const features = [
+    { icon: BedDouble, text: whyContent.features?.[0] },
+    { icon: ConciergeBell, text: whyContent.features?.[1] },
+    { icon: Wifi, text: whyContent.features?.[2] },
+    { icon: Users, text: whyContent.features?.[3] },
+    { icon: Car, text: whyContent.features?.[4] },
+    { icon: Coffee, text: whyContent.features?.[5] },
+  ];
+
   return (
     <section className="relative w-full min-h-screen py-12 md:py-20 overflow-hidden">
       {/* Background Image */}
@@ -74,14 +60,13 @@ const WhyComponent = () => {
           className="text-center mb-10 md:mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-orange-500 mb-3 md:mb-4 leading-tight">
-            Pourquoi l'Hôtel Lateral ?
+            {whyContent.title}
           </h2>
           <p className="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto px-2">
-            Situé au cœur de la médina, notre hôtel est le point de départ idéal
-            pour explorer la ville et découvrir ses trésors cachés.
+            {whyContent.subtitle}
           </p>
           <p className="text-orange-400 mt-2 md:mt-3 font-semibold text-sm sm:text-base">
-            L'Hôtel Lateral mène à tout Tanger
+            {whyContent.highlight}
           </p>
         </motion.div>
 
@@ -117,7 +102,7 @@ const WhyComponent = () => {
           })}
         </motion.div>
 
-        {/* Decorative Divider (Optional) */}
+        {/* Decorative Divider */}
         <motion.div
           initial={{ opacity: 0, scaleX: 0 }}
           whileInView={{ opacity: 1, scaleX: 1 }}
