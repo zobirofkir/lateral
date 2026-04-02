@@ -15,7 +15,7 @@ const images = [
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1590080877777-98c04d4c5c14",
+    url: "https://images.unsplash.com/photo-1548013146-72479768bada",
     alt: "Luxury room",
     title: "Luxury Suite"
   },
