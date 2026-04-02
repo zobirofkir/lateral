@@ -23,34 +23,19 @@ const getInitialLocale = (): Locale => {
 
 const loadLocalTranslations = async (locale: Locale) => {
   try {
+
     const headerModule = await import(`../locales/${locale}/${locale}-header.json`);
-    
-    let homeModule = {};
-    let footerModule = {};
-    
-    try {
-      homeModule = await import(`../locales/${locale}/${locale}-home.json`);
-    } catch (e) {
-      //
-    }
-    
-    try {
-      footerModule = await import(`../locales/${locale}/${locale}-footer.json`);
-    } catch (e) {
-      //
-    }
+    const leftSlideModule = await import(`../locales/${locale}/${locale}-leftslide.json`);
     
     return {
       header: headerModule.default,
-      home: homeModule,
-      footer: footerModule,
+      leftslide: leftSlideModule.default,
     };
   } catch (error) {
     console.error(`Failed to load translations for ${locale}:`, error);
     return {
       header: {},
-      home: {},
-      footer: {},
+      leftslide: {},
     };
   }
 };
@@ -96,10 +81,12 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     document.documentElement.dir = 'ltr'; 
   }, [locale]);
 
+  // إصلاح: التأكد من وجود t دائماً
+  const currentTranslations = translations[locale];
   const value: I18nContextType = {
     locale,
     setLocale,
-    t: translations[locale] || { header: {}, home: {}, footer: {} },
+    t: currentTranslations || { header: {}, leftslide: {} },
     dir: 'ltr', 
     loading,
   };

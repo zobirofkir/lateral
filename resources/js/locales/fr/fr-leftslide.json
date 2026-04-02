@@ -1,0 +1,13 @@
+{
+  "badge": "✨ Luxe & Confort",
+  "hotel_name": "Hôtel Lateral",
+  "city": "Tanger",
+  "description": "Découvrez l'excellence à la marocaine. Un séjour d'exception où le luxe rencontre l'authenticité, avec une vue imprenable sur le détroit de Gibraltar.",
+  "features": {
+    "panoramic_view": "✓ Vue panoramique",
+    "spa": "✓ Spa & Bien-être",
+    "restaurant": "✓ Restaurant Gastronomique",
+    "pool": "✓ Piscine à débordement"
+  },
+  "rating": "5.0 • 1 250+ avis"
+}
