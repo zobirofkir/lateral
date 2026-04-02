@@ -41,7 +41,7 @@ export function useHeader() {
     },
     { 
       name: t.header?.navLinks?.rules || (locale === 'fr' ? "Règlement de l'hôtel" : "Hotel Rules"), 
-      href: "#", 
+      href: "/rules", 
       key: "rules" 
     },
   ];

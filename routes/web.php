@@ -18,3 +18,7 @@ Route::get('/rooms', function() {
 Route::get('/bookings', function() {
     return inertia('BookingsPage');
 });
+
+Route::get('/rules', function() {
+    return inertia('RulesPage');
+});
