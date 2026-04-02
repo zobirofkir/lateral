@@ -24,7 +24,7 @@ const RoomsComponent = () => {
       features: ["Lit double", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision"],
       size: "22 m²",
       capacity: "2 personnes",
-      image: "/assets/images/rooms/double-room.jpg" // Add your image path
+      image: "/assets/images/rooms/double-room.jpg" 
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const RoomsComponent = () => {
       features: ["2 lits simples", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision"],
       size: "22 m²",
       capacity: "2 personnes",
-      image: "/assets/images/rooms/twin-room.jpg" // Add your image path
+      image: "/assets/images/rooms/twin-room.jpg" 
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ const RoomsComponent = () => {
       features: ["2 lits doubles", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision", "Espace salon"],
       size: "35 m²",
       capacity: "4 personnes",
-      image: "/assets/images/rooms/family-room.jpg" // Add your image path
+      image: "/assets/images/rooms/family-room.jpg" 
     }
   ];
 
