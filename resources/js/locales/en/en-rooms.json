@@ -1,0 +1,45 @@
+{
+  "title": "Explore our rooms",
+  "subtitle": "Price, Comfort and Authenticity",
+  "rooms": [
+    {
+      "id": 1,
+      "title": "Single Room",
+      "price": "From 450 MAD",
+      "description": "A stylish and perfectly equipped room, ideal for solo travelers seeking comfort and tranquility.",
+      "features": ["Single bed", "Free Wi-Fi", "Air conditioning", "Private bathroom"],
+      "size": "15 m²",
+      "capacity": "1 person"
+    },
+    {
+      "id": 2,
+      "title": "Double Room",
+      "price": "From 650 MAD",
+      "description": "A warm space designed for couples, offering all the necessary comfort for a relaxing stay.",
+      "features": ["Double bed", "Free Wi-Fi", "Air conditioning", "Private bathroom", "Television"],
+      "size": "22 m²",
+      "capacity": "2 persons"
+    },
+    {
+      "id": 3,
+      "title": "Twin Room",
+      "price": "From 650 MAD",
+      "description": "The perfect solution for friends or colleagues with two separate beds and optimal comfort.",
+      "features": ["2 single beds", "Free Wi-Fi", "Air conditioning", "Private bathroom", "Television"],
+      "size": "22 m²",
+      "capacity": "2 persons"
+    },
+    {
+      "id": 4,
+      "title": "Family Room",
+      "price": "From 950 MAD",
+      "description": "A large space designed to accommodate the whole family in comfort and conviviality.",
+      "features": ["2 double beds", "Free Wi-Fi", "Air conditioning", "Private bathroom", "Television", "Living area"],
+      "size": "35 m²",
+      "capacity": "4 persons"
+    }
+  ],
+  "see_more": "See more",
+  "included_features": "All our rooms include: High-speed Wi-Fi, air conditioning, and private bathroom",
+  "view_all_offers": "View all offers"
+}

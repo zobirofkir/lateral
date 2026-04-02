@@ -1,54 +1,21 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { ArrowRight, Users, BedDouble, BedSingle, Wifi, Coffee, Wind, Tv } from 'lucide-react';
+import { useI18n } from '@/contexts/I18nContext';
+
+const getRoomIcon = (title: string) => {
+  if (title.includes("Single") || title.includes("Simple")) return BedSingle;
+  if (title.includes("Double") && !title.includes("Twin")) return BedDouble;
+  if (title.includes("Twin")) return Users;
+  if (title.includes("Family") || title.includes("Familiale")) return Users;
+  return BedDouble;
+};
 
 const RoomsComponent = () => {
-  const rooms = [
-    {
-      id: 1,
-      title: "Chambre Simple",
-      icon: BedSingle,
-      price: "À partir de 450 MAD",
-      description: "Une chambre de style et parfaitement équipée, idéale pour les voyageurs solos en quête de confort et de tranquillité.",
-      features: ["Lit simple", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée"],
-      size: "15 m²",
-      capacity: "1 personne",
-      image: "https://images.unsplash.com/photo-1600607686527-6fb886090705" 
-    },
-    {
-      id: 2,
-      title: "Chambre Double",
-      icon: BedDouble,
-      price: "À partir de 650 MAD",
-      description: "Un espace chaleureux pensé pour les couples, offrant tout le confort nécessaire pour un séjour relaxant.",
-      features: ["Lit double", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision"],
-      size: "22 m²",
-      capacity: "2 personnes",
-      image: "https://images.unsplash.com/photo-1548013146-72479768bada" 
-    },
-    {
-      id: 3,
-      title: "Chambre Double Twin",
-      icon: Users,
-      price: "À partir de 650 MAD",
-      description: "La solution parfaite pour amis ou collègues avec deux lits séparés et un confort optimal.",
-      features: ["2 lits simples", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision"],
-      size: "22 m²",
-      capacity: "2 personnes",
-      image: "https://images.unsplash.com/photo-1558981285-6f0c94958bb6" 
-    },
-    {
-      id: 4,
-      title: "Chambre Familiale",
-      icon: Users,
-      price: "À partir de 950 MAD",
-      description: "Un grand espace conçu pour accueillir toute la famille dans le confort et la convivialité.",
-      features: ["2 lits doubles", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision", "Espace salon"],
-      size: "35 m²",
-      capacity: "4 personnes",
-      image: "https://images.unsplash.com/photo-1548013146-72479768bada" 
-    }
-  ];
+  const { t } = useI18n();
+  
+  const roomsContent = t.roomsModule || {};
+  const roomsList = roomsContent.rooms || [];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -65,6 +32,13 @@ const RoomsComponent = () => {
     visible: { opacity: 1, y: 0 }
   };
 
+  const roomImages = [
+    "https://images.unsplash.com/photo-1600607686527-6fb886090705",
+    "https://images.unsplash.com/photo-1548013146-72479768bada",
+    "https://images.unsplash.com/photo-1558981285-6f0c94958bb6",
+    "https://images.unsplash.com/photo-1548013146-72479768bada"
+  ];
+
   return (
     <section className="relative py-16 md:py-24 bg-white overflow-hidden">
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,12 +51,12 @@ const RoomsComponent = () => {
           className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#3E2723] mb-3">
-            Explorez nos chambres
+            {roomsContent.title}
           </h2>
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="w-12 h-0.5 bg-[#D4B896]" />
             <p className="text-[#6B3410] font-medium text-sm sm:text-base uppercase tracking-wide">
-              Prix, Confort et Authenticité
+              {roomsContent.subtitle}
             </p>
             <div className="w-12 h-0.5 bg-[#D4B896]" />
           </div>
@@ -96,11 +70,11 @@ const RoomsComponent = () => {
           viewport={{ once: true, margin: "-50px" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
-          {rooms.map((room) => {
-            const Icon = room.icon;
+          {roomsList.map((room: any, index: number) => {
+            const Icon = getRoomIcon(room.title);
             return (
               <motion.div
-                key={room.id}
+                key={room.id || index}
                 variants={cardVariants}
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.3 }}
@@ -109,9 +83,11 @@ const RoomsComponent = () => {
                 {/* Image Section */}
                 <div className="relative h-48 sm:h-52 md:h-56 overflow-hidden bg-gradient-to-br from-[#D4B896]/20 to-[#6B3410]/20">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10" />
-                  <div className="w-full h-full flex items-center justify-center">
-                    <img src={room.image} alt={room.name} />
-                  </div>
+                  <img 
+                    src={roomImages[index % roomImages.length]} 
+                    alt={room.title}
+                    className="w-full h-full object-cover"
+                  />
                   
                   {/* Price Badge */}
                   <div className="absolute top-4 right-4 z-20 bg-[#6B3410] text-white px-3 py-1.5 rounded-lg text-sm font-bold shadow-lg">
@@ -144,7 +120,7 @@ const RoomsComponent = () => {
 
                   {/* Features */}
                   <div className="flex flex-wrap gap-2 mb-5">
-                    {room.features.slice(0, 3).map((feature, idx) => (
+                    {room.features?.slice(0, 3).map((feature: string, idx: number) => (
                       <span
                         key={idx}
                         className="text-xs px-2 py-1 bg-amber-100 text-[#6B3410] rounded-full"
@@ -152,7 +128,7 @@ const RoomsComponent = () => {
                         {feature}
                       </span>
                     ))}
-                    {room.features.length > 3 && (
+                    {room.features?.length > 3 && (
                       <span className="text-xs px-2 py-1 bg-amber-100 text-[#6B3410] rounded-full">
                         +{room.features.length - 3}
                       </span>
@@ -165,7 +141,7 @@ const RoomsComponent = () => {
                     whileTap={{ scale: 0.98 }}
                     className="w-full sm:w-auto group/btn flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#D4B896] to-[#6B3410] text-white rounded-lg font-medium text-sm transition-all duration-300 hover:shadow-lg"
                   >
-                    <span>Voir plus</span>
+                    <span>{roomsContent.see_more}</span>
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                   </motion.button>
                 </div>
@@ -186,10 +162,10 @@ const RoomsComponent = () => {
           className="text-center mt-12 md:mt-16"
         >
           <p className="text-[#5C2E0B] mb-4 text-sm md:text-base">
-            Toutes nos chambres incluent : Wi-Fi haut débit, climatisation, et salle de bain privative
+            {roomsContent.included_features}
           </p>
           <button className="px-8 py-3 bg-transparent border-2 border-[#6B3410] text-[#6B3410] rounded-lg font-semibold hover:bg-[#6B3410] hover:text-white transition-all duration-300">
-            Voir toutes nos offres
+            {roomsContent.view_all_offers}
           </button>
         </motion.div>
       </div>

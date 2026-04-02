@@ -30,14 +30,17 @@ const loadLocalTranslations = async (locale: Locale) => {
     const textContentModule = await import(`../locales/${locale}/${locale}-text-content.json`);
     const galleryTitle = await import(`../locales/${locale}/${locale}-gallerytitle.json`);
     const whyModule = await import(`../locales/${locale}/${locale}-why.json`);
-    
+    const roomsModule = await import(`../locales/${locale}/${locale}-rooms.json`);
+
     return {
       header: headerModule.default,
       leftslide: leftSlideModule.default,
       titleSection: titleSectionModule.default,
       textContent: textContentModule.default,
       galleryTitle: galleryTitle.default,
-      whyModule: whyModule.default
+      whyModule: whyModule.default,
+      roomsModule: roomsModule.default
+      
     };
   } catch (error) {
     console.error(`Failed to load translations for ${locale}:`, error);
