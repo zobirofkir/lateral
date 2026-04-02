@@ -18,7 +18,7 @@ const LanguageDropdownComponent = ({
                 onClick={() => setLangOpen(!langOpen)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 text-[#3E2723] hover:text-[#5C2E0B] transition-colors px-3 py-2 rounded-lg bg-[#FAF6F2] hover:bg-[#F5EDE5]"
+                className="flex items-center gap-2 text-[#3E2723] hover:text-[#5C2E0B] transition-colors px-3 py-2 rounded-lg white"
             >
                 <span className="text-lg">{currentLang.flag}</span>
                 <span className="text-sm font-medium hidden lg:inline">{currentLang.label}</span>
