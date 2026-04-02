@@ -1,45 +1,81 @@
 {
-  "title": "Explore our rooms",
-  "subtitle": "Price, Comfort and Authenticity",
+  "title": "Explore Our Apartments",
+  "subtitle": "Luxury, Comfort and Serenity in Tangier",
   "rooms": [
     {
       "id": 1,
-      "title": "Single Room",
-      "price": "From 450 MAD",
-      "description": "A stylish and perfectly equipped room, ideal for solo travelers seeking comfort and tranquility.",
-      "features": ["Single bed", "Free Wi-Fi", "Air conditioning", "Private bathroom"],
-      "size": "15 m²",
-      "capacity": "1 person"
+      "title": "Signature Luxury Suite",
+      "price": "Price on request",
+      "description": "Experience excellence in Tangier in our 150 m² Signature Suite at La Teral. This prestigious apartment combines elegance and natural light to offer a refined atmosphere with breathtaking views of the sea and mountains. Perfect for families, it features three spacious, soundproofed bedrooms, one of which includes an elegant and friendly area for your relaxation moments or breakfasts. Share warm moments in our two large modern living rooms or prepare your meals like at home in a state-of-the-art, ultra-equipped kitchen opening onto a sunny terrace. The true luxury? Its two private balconies offering a permanent spectacle over the Mediterranean, the city, and majestic peaks.",
+      "features": ["3 bedrooms", "2 living rooms", "Ultra-equipped modern kitchen", "2 bathrooms", "2 balconies with mountain views", "1 sunny terrace", "Central air conditioning", "Soundproofed windows"],
+      "size": "150 m²",
+      "capacity": "6 people"
     },
     {
       "id": 2,
-      "title": "Double Room",
-      "price": "From 650 MAD",
-      "description": "A warm space designed for couples, offering all the necessary comfort for a relaxing stay.",
-      "features": ["Double bed", "Free Wi-Fi", "Air conditioning", "Private bathroom", "Television"],
-      "size": "22 m²",
-      "capacity": "2 persons"
+      "title": "Escape of Calm & Comfort",
+      "price": "Price on request",
+      "description": "Treat yourself to a peaceful stay in this modern 65 m² apartment, designed for your well-being. Enjoy two cozy bedrooms with hypoallergenic bedding, a bright living room with Smart TV, and a fully equipped kitchen opening onto a sunny terrace, plus a modern bathroom. Every detail, from central air conditioning to perfect soundproofing, has been thought out to offer you total serenity.",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room with Smart TV", "Equipped kitchen", "Modern bathroom", "Sunny terrace", "Central air conditioning", "Soundproofed windows"],
+      "size": "65 m²",
+      "capacity": "4 people"
     },
     {
       "id": 3,
-      "title": "Twin Room",
-      "price": "From 650 MAD",
-      "description": "The perfect solution for friends or colleagues with two separate beds and optimal comfort.",
-      "features": ["2 single beds", "Free Wi-Fi", "Air conditioning", "Private bathroom", "Television"],
-      "size": "22 m²",
-      "capacity": "2 persons"
+      "title": "The Perfect Balance Between Modernity and Serenity",
+      "price": "Price on request",
+      "description": "Stay in a modern and refined setting in the heart of Tangier. This spacious apartment welcomes you with two elegant bedrooms featuring hypoallergenic bedding, a bright living room with super comfortable sofas and a Smart TV. Its modern, fully equipped kitchen opens onto a pleasant sunny terrace, while its private balcony offers a breathtaking view of the mountains. An idyllic setting, designed for your family vacations or business trips.",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room with Smart TV", "Equipped kitchen", "Equipped bathroom", "Balcony with breathtaking view", "Sunny terrace"],
+      "size": "73 m²",
+      "capacity": "4 people"
     },
     {
       "id": 4,
-      "title": "Family Room",
-      "price": "From 950 MAD",
-      "description": "A large space designed to accommodate the whole family in comfort and conviviality.",
-      "features": ["2 double beds", "Free Wi-Fi", "Air conditioning", "Private bathroom", "Television", "Living area"],
-      "size": "35 m²",
-      "capacity": "4 persons"
+      "title": "The Alliance of Comfort & Warmth",
+      "price": "Price on request",
+      "description": "Welcome to a modern and warm setting, designed for your absolute well-being. This spacious 73 m² apartment welcomes you with two cozy bedrooms, featuring hypoallergenic bedding and soundproofed windows to guarantee you completely calm nights. Relax in a light-filled living room or enjoy your equipped kitchen opening onto a private balcony with a breathtaking view. Its contemporary bathroom with a modern shower completes this cocoon of comfort, ideal for your stays in Tangier.",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room", "Equipped kitchen", "Contemporary bathroom with shower", "Private balcony with breathtaking view", "Soundproofed windows"],
+      "size": "73 m²",
+      "capacity": "4 people"
+    },
+    {
+      "id": 5,
+      "title": "Cozy & Bright",
+      "price": "Price on request",
+      "description": "Stay in a modern and soothing setting, ideally located in the heart of Tangier. Apartment No. 5 welcomes you with two comfortable bedrooms designed for your rest, as well as a bright living room equipped with plush sofas and a Smart TV for your relaxation moments. Its fully equipped kitchen and contemporary bathroom with a shower offer all the necessary comfort for a 'home away from home' stay.",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room with Smart TV", "Fully equipped kitchen", "Contemporary bathroom with shower"],
+      "size": "65 m²",
+      "capacity": "4 people"
+    },
+    {
+      "id": 6,
+      "title": "Elegance & Breathtaking View",
+      "price": "Price on request",
+      "description": "Stay in a modern and refined setting in the heart of Tangier. This spacious 73 m² apartment welcomes you with two elegant bedrooms and a bright living room, equipped with super comfortable sofas and a Smart TV for your relaxation moments. Its modern, fully equipped kitchen opens onto a pleasant sunny terrace, while its private balcony offers a breathtaking view of the sea and mountains. Designed for your family vacations or business trips, this haven of peace includes everything you need for a worry-free stay: high-speed Wi-Fi, air conditioning, quality linens, and secure parking.",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room with Smart TV", "Modern equipped kitchen", "Equipped bathroom", "Private balcony with breathtaking sea and mountain view", "Sunny terrace", "High-speed Wi-Fi", "Air conditioning", "Secure parking"],
+      "size": "73 m²",
+      "capacity": "4 people"
+    },
+    {
+      "id": 7,
+      "title": "Luxury and Serenity",
+      "price": "Price on request",
+      "description": "Treat yourself to an exceptional stay at La Teral Apartment-Hotel, in the heart of Tangier. This elegant 73 m² apartment combines luxury and serenity to accommodate families and business travelers in absolute comfort. The night area consists of two air-conditioned and perfectly soundproofed bedrooms, one of which has a safe and a flat-screen TV. Relax in a modern and warm living room or prepare your meals in a fully equipped kitchen. A real charm asset, the kitchen opens onto a private balcony offering a soothing view of the mountains and the city. A modern bathroom.",
+      "features": ["2 air-conditioned and soundproofed bedrooms", "Safe", "Flat-screen TV", "Modern living room", "Fully equipped kitchen", "Private balcony with mountain and city view", "Modern bathroom"],
+      "size": "73 m²",
+      "capacity": "4 people"
+    },
+    {
+      "id": 8,
+      "title": "Luxury and Serenity",
+      "price": "Price on request",
+      "description": "Discover absolute comfort in this modern 65 m² apartment at La Teral. Ideal for families or business trips, this air-conditioned accommodation features two spacious bedrooms with Smart TV and soundproofed windows for total rest. Relax in a bright living room and enjoy a fully equipped kitchen (coffee machine, washing machine, microwave) as well as an elegant bathroom with complimentary toiletries. For a worry-free stay.",
+      "features": ["2 spacious bedrooms with Smart TV", "Soundproofed windows", "Bright living room", "Equipped kitchen (coffee machine, washing machine, microwave)", "Elegant bathroom with toiletries", "Air conditioning"],
+      "size": "65 m²",
+      "capacity": "4 people"
     }
   ],
   "see_more": "See more",
-  "included_features": "All our rooms include: High-speed Wi-Fi, air conditioning, and private bathroom",
-  "view_all_offers": "View all offers"
+  "included_features": "All our apartments include: high-speed Wi-Fi, air conditioning, quality hypoallergenic bedding, soundproofed windows, and bath towels",
+  "view_all_offers": "View all our offers"
 }
