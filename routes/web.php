@@ -46,3 +46,10 @@ Route::get('/bookings', function() {
 Route::get('/rules', function() {
     return inertia('RulesPage');
 });
+
+/**
+ * Contact Page
+ */
+Route::get('/contacts', function() {
+    return inertia('ContactPage');
+});

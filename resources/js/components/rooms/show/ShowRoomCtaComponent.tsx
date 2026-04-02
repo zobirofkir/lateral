@@ -13,7 +13,7 @@ const ShowRoomCtaComponent = () => {
           className="mt-12 text-center"
         >
           <Link
-            href="/contact"
+            href="/contacts"
             className="inline-flex items-center gap-2 px-8 py-3 bg-transparent border-2 border-[#6B3410] text-[#6B3410] rounded-lg font-semibold hover:bg-[#6B3410] hover:text-white transition-all duration-300"
           >
             <Phone className="w-4 h-4" />

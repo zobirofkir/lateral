@@ -44,6 +44,11 @@ export function useHeader() {
       href: "/rules", 
       key: "rules" 
     },
+    { 
+      name: t.header?.navLinks?.contacts || (locale === 'fr' ? "Contact" : "Contact"), 
+      href: "/contacts", 
+      key: "contacts" 
+    },
   ];
 
   const languages = [
