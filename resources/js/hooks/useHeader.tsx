@@ -21,7 +21,7 @@ export function useHeader() {
   const navLinks = [
     { 
       name: t.header?.navLinks?.home || (locale === 'fr' ? "Accueil" : "Home"), 
-      href: "#", 
+      href: "/", 
       key: "home" 
     },
     { 
@@ -31,7 +31,7 @@ export function useHeader() {
     },
     { 
       name: t.header?.navLinks?.rooms || (locale === 'fr' ? "Chambres" : "Rooms"), 
-      href: "#", 
+      href: "/chambres", 
       key: "rooms" 
     },
     { 

@@ -10,3 +10,7 @@ Route::get('/', function() {
 Route::get('/decouvrir-tanger', function() {
     return inertia('DiscoverTangerPage');
 });
+
+Route::get('/chambres', function() {
+    return inertia('ChambresPage');
+});
