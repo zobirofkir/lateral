@@ -1,14 +1,14 @@
 {
   "welcome": "Bienvenue",
-  "hotel_name": "L'Hôtel Lateral",
-  "description_1": "Situé au cœur vibrant de la médina de Tanger, l'Hôtel Lateral est une adresse emblématique du Petit Socco. Son emplacement privilégié, à deux pas de la Kasbah et à seulement cinq minutes à pied du port de Tanger, en fait un point de départ idéal pour découvrir la ville.",
-  "description_2": "Entouré de ruelles historiques, de cafés authentiques et d'une atmosphère intemporelle, l'hôtel offre à ses visiteurs une immersion totale dans l'âme culturelle et vivante de Tanger. Que ce soit pour explorer ses sites mythiques, profiter de sa lumière unique ou se perdre dans l'ambiance animée de la médina, l'Hôtel Lateral promet une expérience authentique et inoubliable.",
+  "hotel_name": "LA TERAL",
+  "description_1": "Le charme de Tanger, l’exigence d’un service hôtelier. LA TERAL propose une collection exclusive d'appartements de haut standing, alliant l'indépendance d'une résidence privée au raffinement des services hôteliers les plus prestigieux.",
+  "description_2": "LA TERAL vous offre une expérience unique, sublimée par une vue panoramique spectaculaire entre mer et montagnes. Idéalement située, la résidence profite d’une proximité immédiate avec la célèbre Plage Malabata et le Parc Villa Harris, tout en étant à quelques pas des meilleurs restaurants et centres commerciaux de la ville. Que votre séjour soit dédié aux affaires ou à des vacances en famille, profitez d'un cadre d'exception conçu pour l’excellence et la sérénité absolues.",
   "rating": {
-    "value": "4.8 Étoiles",
-    "label": "Note des clients"
+    "value": "Excellence",
+    "label": "Expérience Haut de Gamme"
   },
   "award": {
-    "title": "Top Choice",
-    "label": "Prix d'Excellence 2024"
+    "title": "Résidence Premium",
+    "label": "Luxe & Sérénité"
   }
 }

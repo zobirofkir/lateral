@@ -26,7 +26,7 @@ export function useHeader() {
     },
     { 
       name: t.header?.navLinks?.discover || (locale === 'fr' ? "Découvrir Tanger" : "Discover Tangier"), 
-      href: "/decouvrir-tanger", 
+      href: "/discover-tanger", 
       key: "discover" 
     },
     { 
@@ -36,7 +36,7 @@ export function useHeader() {
     },
     { 
       name: t.header?.navLinks?.booking || (locale === 'fr' ? "Réservation" : "Booking"), 
-      href: "#", 
+      href: "/bookings", 
       key: "booking" 
     },
     { 

@@ -1,14 +1,14 @@
 {
   "welcome": "Welcome",
-  "hotel_name": "Hôtel Lateral",
-  "description_1": "Located in the vibrant heart of the Tangier medina, Hôtel Lateral is an iconic address in Petit Socco. Its privileged location, steps from the Kasbah and just a five-minute walk from Tangier port, makes it an ideal starting point to discover the city.",
-  "description_2": "Surrounded by historic streets, authentic cafes, and a timeless atmosphere, the hotel offers visitors a complete immersion in the cultural and living soul of Tangier. Whether to explore its mythical sites, enjoy its unique light, or lose yourself in the lively medina atmosphere, Hôtel Lateral promises an authentic and unforgettable experience.",
+  "hotel_name": "LA TERAL",
+  "description_1": "The charm of Tangier, combined with the excellence of hotel service. LA TERAL offers an exclusive collection of high-end apartments, blending the independence of a private residence with the refinement of the most prestigious hotel services.",
+  "description_2": "LA TERAL provides a unique experience, enhanced by a spectacular panoramic view between sea and mountains. Ideally located, the residence enjoys immediate proximity to the famous Malabata Beach and Villa Harris Park, while being just steps away from the city's best restaurants and shopping centers. Whether your stay is for business or a family vacation, enjoy an exceptional setting designed for excellence and absolute serenity.",
   "rating": {
-    "value": "4.8 Stars",
-    "label": "Customer rating"
+    "value": "Excellence",
+    "label": "Premium Experience"
   },
   "award": {
-    "title": "Top Choice",
-    "label": "Excellence Award 2024"
+    "title": "Premium Residence",
+    "label": "Luxury & Serenity"
   }
 }
