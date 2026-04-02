@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import { useI18n } from '@/contexts/I18nContext';
 
 const GallerySectionComponent = ({
     itemVariants,
@@ -12,6 +13,9 @@ const GallerySectionComponent = ({
     selectedImage,
     hoveredIndex
 }) => {
+
+  const { t } = useI18n();
+  const galleryContent = t.galleryTitle || {};
   return (
     <>
       <motion.div
@@ -24,10 +28,10 @@ const GallerySectionComponent = ({
         {/* Title Section - Optimized for mobile */}
         <motion.div variants={itemVariants} className="text-center mb-6 sm:mb-8 md:mb-10">
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#3E2723] mb-2 sm:mb-3">
-            Notre Galerie
+            {galleryContent.title}
           </h3>
           <p className="text-sm sm:text-base text-[#5C2E0B] px-4 sm:px-0">
-            Cliquez sur une image pour changer la vue principale
+            {galleryContent.subtitle}
           </p>
         </motion.div>
 
@@ -42,7 +46,7 @@ const GallerySectionComponent = ({
               onHoverEnd={() => setHoveredIndex(null)}
               onClick={() => setSelectedImage(image)}
               className="cursor-pointer group"
-              whileTap={{ scale: 0.98 }} // Added tap feedback for mobile
+              whileTap={{ scale: 0.98 }} 
             >
               <motion.div
                 variants={imageVariants}
@@ -61,21 +65,9 @@ const GallerySectionComponent = ({
                     src={image.url}
                     alt={image.alt}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy" // Lazy loading for better performance
+                    loading="lazy" 
                   />
-                  
-                  {/* Hover/Active Overlay - Optimized for touch */}
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: hoveredIndex === image.id ? 1 : 0 }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute inset-0 bg-black/50 flex items-center justify-center backdrop-blur-[2px]"
-                  >
-                    <span className="text-white text-[10px] sm:text-xs font-medium px-2 py-1 sm:px-3 sm:py-1.5 bg-black/60 rounded-full backdrop-blur-sm whitespace-nowrap">
-                      👆 Click to view
-                    </span>
-                  </motion.div>
-                  
+                                    
                   {/* Active indicator */}
                   {selectedImage.id === image.id && (
                     <motion.div
