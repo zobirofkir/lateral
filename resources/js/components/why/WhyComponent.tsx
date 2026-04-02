@@ -73,14 +73,14 @@ const WhyComponent = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-orange-500 mb-4">
-            Pourquoi l'Hôtel Mauritania ?
+            Pourquoi l'Hôtel Lateral ?
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Situé au cœur de la médina, notre hôtel est le point de départ idéal
             pour explorer la ville et découvrir ses trésors cachés.
           </p>
           <p className="text-orange-400 mt-2 font-semibold">
-            L’Hôtel Mauritania mène à tout Tanger
+            L’Hôtel Lateral mène à tout Tanger
           </p>
         </motion.div>
 
