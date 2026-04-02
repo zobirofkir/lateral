@@ -6,3 +6,7 @@ use Laravel\Fortify\Features;
 Route::get('/', function() {
     return inertia('WelcomePage');
 });
+
+Route::get('/decouvrir-tanger', function() {
+    return inertia('DiscoverTanger');
+});

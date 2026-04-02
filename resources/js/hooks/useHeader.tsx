@@ -26,7 +26,7 @@ export function useHeader() {
     },
     { 
       name: t.header?.navLinks?.discover || (locale === 'fr' ? "Découvrir Tanger" : "Discover Tangier"), 
-      href: "#", 
+      href: "/decouvrir-tanger", 
       key: "discover" 
     },
     { 
