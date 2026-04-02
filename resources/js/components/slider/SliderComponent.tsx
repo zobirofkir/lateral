@@ -1,57 +1,31 @@
-import { useState, useRef, useEffect } from 'react';
-import {  Play, Pause, Volume2, VolumeX } from 'lucide-react';
-import { motion } from 'framer-motion';
 import VideoBackgroundComponent from './VideoBackgroundComponent';
 import LeftColumnComponent from './LeftColumnComponent';
 import RightColumnComponent from './RightColumnComponent';
 import VideoControlsComponent from './VideoControlsComponent';
 import ScrollIndecatorComponent from './ScrollIndecatorComponent';
+import { useSLider } from '@/hooks/useSlider';
 
 const SliderComponent = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
-  const [checkIn, setCheckIn] = useState('');
-  const [checkOut, setCheckOut] = useState('');
-  const [guests, setGuests] = useState(2);
-  const [isGuestDropdownOpen, setIsGuestDropdownOpen] = useState(false);
-  const videoRef = useRef(null);
 
-  // Handle video playback
-  useEffect(() => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.play().catch(error => {
-          console.log("Video autoplay prevented:", error);
-        });
-      } else {
-        videoRef.current.pause();
-      }
-    }
-  }, [isPlaying]);
-
-  const togglePlayPause = () => {
-    setIsPlaying(!isPlaying);
-  };
-
-  const toggleMute = () => {
-    setIsMuted(!isMuted);
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
-    }
-  };
-
-  const handleBooking = (e) => {
-    e.preventDefault();
-    console.log('Booking:', { checkIn, checkOut, guests });
-    // Add your booking logic here
-  };
-
-  // Get today's date for min attribute
-  const today = new Date().toISOString().split('T')[0];
-  
-  // Set default dates (today and tomorrow)
-  const defaultCheckIn = today;
-  const defaultCheckOut = new Date(Date.now() + 86400000).toISOString().split('T')[0];
+  const {
+    isPlaying,
+    isMuted,
+    checkIn,
+    setCheckIn,
+    checkOut,
+    setCheckOut,
+    guests,
+    setGuests,
+    isGuestDropdownOpen,
+    setIsGuestDropdownOpen,
+    videoRef,
+    togglePlayPause,
+    toggleMute,
+    handleBooking,
+    today,
+    defaultCheckIn,
+    defaultCheckOut
+  } = useSLider();
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
