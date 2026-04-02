@@ -28,7 +28,7 @@ const LeftColumnComponent = () => {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight"
             >
-            Hôtel Mauritania
+            Hôtel Lateral
             <span className="block text-[#D4A574] text-3xl sm:text-4xl lg:text-5xl mt-2">
                 Tanger
             </span>
