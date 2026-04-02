@@ -79,28 +79,28 @@ const RulesPage = () => {
 
   const faqs = [
     {
-      question: "How do I book an appointment?",
-      answer: "You can book online through our website, call us directly, or visit our shop in person. Online booking is available 24/7.",
+      question: rulesModule.faqs[0].question,
+      answer: rulesModule.faqs[0].answer
     },
     {
-      question: "What if I need to reschedule?",
-      answer: "You can reschedule online up to 24 hours before your appointment. For last-minute changes, please call us directly.",
+      question: rulesModule.faqs[1].question,
+      answer: rulesModule.faqs[1].answer
     },
     {
-      question: "Do you offer group bookings?",
-      answer: "Yes! We accommodate group bookings for parties of 4 or more. Please call ahead to arrange special accommodations.",
+      question: rulesModule.faqs[2].question,
+      answer: rulesModule.faqs[2].answer
     },
     {
-      question: "Are walk-ins welcome?",
-      answer: "Walk-ins are welcome based on availability, but we strongly recommend booking in advance to secure your preferred time.",
+      question: rulesModule.faqs[3].question,
+      answer: rulesModule.faqs[3].answer
     },
     {
-      question: "What's your refund policy?",
-      answer: "We don't offer refunds but provide free adjustments within 3 days if you're not satisfied with your service.",
+      question: rulesModule.faqs[4].question,
+      answer: rulesModule.faqs[4].answer
     },
     {
-      question: "Do you have gift cards?",
-      answer: "Yes, we offer digital and physical gift cards in any denomination. Perfect for holidays and special occasions!",
+      question: rulesModule.faqs[5].question,
+      answer: rulesModule.faqs[5].answer
     },
   ];
 
@@ -137,7 +137,7 @@ const RulesPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#FDF8F5] via-[#F9F2EB] to-[#F5EDE6]">
+    <div className="min-h-screen bg-white">
       {/* Hero Section - Brown Theme */}
       <div className="relative bg-gradient-to-r from-[#2C1810] via-[#3E2723] to-[#2C1810] text-white overflow-hidden">
         {/* Subtle pattern overlay */}
@@ -217,48 +217,68 @@ const RulesPage = () => {
             <div className="p-8 md:p-10 bg-gradient-to-br from-[#3E2723] to-[#2C1810] text-white">
               <div className="flex items-center gap-3 mb-6">
                 <Calendar className="w-8 h-8 text-amber-300" />
-                <h3 className="text-2xl font-bold">Booking Policy</h3>
+                <h3 className="text-2xl font-bold">
+                  {rulesModule.detailedPolicies.booking.title}
+                </h3>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
-                  <span>Online booking available 24/7 for your convenience</span>
+                  <span>
+                    {rulesModule.detailedPolicies.booking.items[0]}
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
-                  <span>Credit card required to secure all appointments</span>
+                  <span>
+                    {rulesModule.detailedPolicies.booking.items[1]}
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
-                  <span>Same-day bookings accepted based on availability</span>
+                  <span>
+                    {rulesModule.detailedPolicies.booking.items[2]}
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <XCircle className="w-5 h-5 text-amber-300 mt-0.5 flex-shrink-0" />
-                  <span>No-show or late cancellation fee: 50% of service price</span>
+                  <span>
+                    {rulesModule.detailedPolicies.booking.items[3]}
+                  </span>
                 </li>
               </ul>
             </div>
             <div className="p-8 md:p-10 bg-gradient-to-br from-[#F5EDE6] to-[#EFE3D9]">
               <div className="flex items-center gap-3 mb-6">
                 <HeartHandshake className="w-8 h-8 text-[#5C3A21]" />
-                <h3 className="text-2xl font-bold text-[#2C1810]">Service Guidelines</h3>
+                <h3 className="text-2xl font-bold text-[#2C1810]">
+                  {rulesModule.detailedPolicies.service.title}
+                </h3>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#5C3A21] mt-0.5 flex-shrink-0" />
-                  <span className="text-[#3E2723]">Consultation included before every service</span>
+                  <span className="text-[#3E2723]">
+                    {rulesModule.detailedPolicies.service.items[0]}
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#5C3A21] mt-0.5 flex-shrink-0" />
-                  <span className="text-[#3E2723]">Free adjustments within 3 days of service</span>
+                  <span className="text-[#3E2723]">
+                    {rulesModule.detailedPolicies.service.items[1]}
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#5C3A21] mt-0.5 flex-shrink-0" />
-                  <span className="text-[#3E2723]">Hygiene and sanitation protocols strictly followed</span>
+                  <span className="text-[#3E2723]">
+                    {rulesModule.detailedPolicies.service.items[2]}
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Smile className="w-5 h-5 text-[#5C3A21] mt-0.5 flex-shrink-0" />
-                  <span className="text-[#3E2723]">100% satisfaction guaranteed on all services</span>
+                  <span className="text-[#3E2723]">
+                    {rulesModule.detailedPolicies.service.items[3]}
+                  </span>
                 </li>
               </ul>
             </div>
@@ -270,13 +290,15 @@ const RulesPage = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-[#E6D5C3] px-4 py-1 rounded-full mb-4">
               <Gift className="w-4 h-4 text-[#5C3A21]" />
-              <span className="text-sm font-medium text-[#5C3A21]">Knowledge Base</span>
+              <span className="text-sm font-medium text-[#5C3A21]">
+                {rulesModule.faqSection.badge}
+              </span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#2C1810] mb-4">
-              Frequently Asked Questions
+              {rulesModule.faqSection.title}
             </h2>
             <p className="text-lg text-[#5C3A21]">
-              Find answers to common questions about our policies and services
+              {rulesModule.faqSection.subtitle}
             </p>
           </div>
 
@@ -312,12 +334,14 @@ const RulesPage = () => {
           <div className="flex items-start gap-4">
             <AlertTriangle className="w-8 h-8 text-amber-600 flex-shrink-0" />
             <div>
-              <h3 className="font-bold text-amber-800 text-lg mb-1">Important Notice</h3>
+              <h3 className="font-bold text-amber-800 text-lg mb-1">
+                {rulesModule.importantNotice.title}
+              </h3>
               <p className="text-amber-700 mb-2 leading-relaxed">
-                Policies are subject to change without prior notice. Please review our rules periodically for updates.
+                {rulesModule.importantNotice.content}
               </p>
               <p className="text-sm text-amber-600">
-                Last updated: December 1, 2024
+                {rulesModule.importantNotice.lastUpdated}
               </p>
             </div>
           </div>
@@ -326,9 +350,11 @@ const RulesPage = () => {
         {/* Contact Section - Brown Theme */}
         <div className="bg-gradient-to-r from-[#2C1810] to-[#3E2723] rounded-3xl text-white p-8 md:p-12 shadow-xl">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Still Have Questions?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              {rulesModule.contactSection.title}
+            </h2>
             <p className="text-amber-100/80 max-w-2xl mx-auto">
-              Our team is here to help you with any questions about our policies or services
+              {rulesModule.contactSection.subtitle}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
@@ -336,22 +362,34 @@ const RulesPage = () => {
               <div className="bg-[#5C3A21] group-hover:bg-[#C68B5E] w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 transform group-hover:scale-110">
                 <Phone className="w-6 h-6" />
               </div>
-              <p className="font-semibold text-lg">Call Us</p>
-              <p className="text-amber-100/70 text-sm">(555) 123-4567</p>
+              <p className="font-semibold text-lg">
+                {rulesModule.contactSection.phone}
+              </p>
+              <p className="text-amber-100/70 text-sm">
+                {rulesModule.contactSection.phoneNumber}
+              </p>
             </div>
             <div className="text-center group">
               <div className="bg-[#5C3A21] group-hover:bg-[#C68B5E] w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 transform group-hover:scale-110">
                 <Mail className="w-6 h-6" />
               </div>
-              <p className="font-semibold text-lg">Email</p>
-              <p className="text-amber-100/70 text-sm">info@barbershop.com</p>
+              <p className="font-semibold text-lg">
+                {rulesModule.contactSection.email}
+              </p>
+              <p className="text-amber-100/70 text-sm">
+                {rulesModule.contactSection.emailAddress}
+              </p>
             </div>
             <div className="text-center group">
               <div className="bg-[#5C3A21] group-hover:bg-[#C68B5E] w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 transform group-hover:scale-110">
                 <MapPin className="w-6 h-6" />
               </div>
-              <p className="font-semibold text-lg">Visit Us</p>
-              <p className="text-amber-100/70 text-sm">123 Main St, City, State</p>
+              <p className="font-semibold text-lg">
+                {rulesModule.contactSection.visit}
+              </p>
+              <p className="text-amber-100/70 text-sm">
+                {rulesModule.contactSection.address}
+              </p>
             </div>
           </div>
           <div className="flex justify-center gap-5 mt-10">
