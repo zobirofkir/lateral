@@ -1,114 +1,205 @@
 {
   "hero": {
-    "badge": "Our Policies",
-    "title": "Rules & Guidelines",
-    "description": "We strive to provide the best experience for all our clients. Please review our policies to ensure a smooth and enjoyable visit.",
+    "badge": "Welcome to La Teral",
+    "title": "Excellence with La Teral",
+    "description": "The charm of Tangier, the standard of premium hotel service. An exclusive collection of high-standing apartments, combining the independence of a private residence with the refinement of the most prestigious hotel services.",
     "buttons": {
-      "book": "Book Appointment",
+      "book": "Book Now",
       "contact": "Contact Us"
     }
   },
+  "presentationSection": {
+    "badge": "Our Establishment",
+    "title": "A Unique Experience in Tangier",
+    "description": "LA TERAL offers you a unique experience, enhanced by a spectacular panoramic view of the sea and mountains. Ideally located, the residence is within immediate reach of the famous Malabata Beach and Villa Harris Park, while being just steps away from the city's best restaurants and shopping centers.",
+    "subtitle": "Whether your stay is for business or a family vacation, enjoy an exceptional setting designed for absolute excellence and serenity."
+  },
+  "servicesSection": {
+    "badge": "Services & Amenities",
+    "title": "Our General Services",
+    "subtitle": "Total comfort for a worry-free stay",
+    "servicesList": [
+      "Central air conditioning",
+      "Free high-speed Wi-Fi",
+      "Free secure parking",
+      "Free housekeeping service throughout your stay",
+      "24/7 security service (guard, outdoor cameras, fire extinguishers)",
+      "Private washing machine in each apartment",
+      "Smart TV in every bedroom",
+      "High-quality hypoallergenic bedding in all bedrooms",
+      "Soundproof windows for a peaceful stay",
+      "Elevator access to all floors",
+      "Hot and cold water available"
+    ]
+  },
+  "apartments": [
+    {
+      "id": 1,
+      "name": "Signature Luxury Suite",
+      "slug": "signature-luxury-suite",
+      "surface": "150 sqm",
+      "features": ["3 bedrooms", "2 living rooms", "1 modern kitchen", "2 bathrooms", "2 balconies (mountain view)", "1 sunny terrace"],
+      "description": "Experience the exceptional in Tangier in our 150 sqm Signature Suite at La Teral. This prestigious apartment combines elegance and natural light to offer a refined atmosphere with a breathtaking view of the sea and mountains. Ideal for families, it features three spacious, soundproofed bedrooms, one of which includes an elegant and cozy corner for relaxing or having breakfast. Share warm moments in our two large modern living rooms or prepare your meals like at home in a state-of-the-art, fully equipped kitchen (coffee machine, washing machine, oven...) opening onto a sunny terrace. The real luxury? Its two private balconies offering a permanent spectacle of the Mediterranean, the city, and the majestic mountain peaks."
+    },
+    {
+      "id": 2,
+      "name": "Escape of Calm & Comfort",
+      "slug": "escape-calm-comfort",
+      "surface": "65 sqm",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room", "Equipped kitchen", "Equipped bathroom", "Sunny terrace"],
+      "description": "Treat yourself to a peaceful stay in this modern 65 sqm apartment, designed for your well-being. Enjoy two cozy bedrooms with hypoallergenic bedding, a bright living room with a Smart TV, and a fully equipped kitchen opening onto a sunny terrace, plus a modern bathroom. Every detail, from the central air conditioning to the perfect soundproofing, has been thought out to offer you total serenity."
+    },
+    {
+      "id": 3,
+      "name": "The Perfect Balance of Modernity & Serenity",
+      "slug": "balance-modernity-serenity",
+      "surface": "73 sqm",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room", "Equipped kitchen", "Balcony with breathtaking view", "Equipped bathroom", "Sunny terrace"],
+      "description": "Stay in a modern and refined setting in the heart of Tangier. This spacious apartment welcomes you with two elegant bedrooms with hypoallergenic bedding, a bright living room with large comfortable sofas and a Smart TV. Its modern, fully equipped kitchen opens onto a pleasant sunny terrace, while its private balcony offers a breathtaking view of the mountains. An idyllic setting, designed for your family vacations or business trips."
+    },
+    {
+      "id": 4,
+      "name": "The Blend of Comfort & Warmth",
+      "slug": "blend-comfort-warmth",
+      "surface": "73 sqm",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room", "Equipped kitchen", "Balcony with breathtaking view", "Equipped bathroom"],
+      "description": "Welcome to a modern and warm setting, designed for your absolute well-being. This spacious 73 sqm apartment welcomes you with two cozy bedrooms, equipped with hypoallergenic bedding and soundproofed windows to guarantee you nights of total calm. Relax in a light-filled living room or enjoy your equipped kitchen opening onto a private balcony with a breathtaking view. Its contemporary bathroom with a modern shower completes this cozy haven, ideal for your stays in Tangier."
+    },
+    {
+      "id": 5,
+      "name": "Cozy & Bright",
+      "slug": "cozy-bright",
+      "surface": "65 sqm",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room", "Equipped kitchen", "Equipped bathroom"],
+      "description": "Stay in a modern and soothing setting, ideally located in the heart of Tangier. Apartment No. 5 welcomes you with two comfortable bedrooms designed for your rest, as well as a bright living room with plush sofas and a Smart TV for your relaxation moments. Its fully equipped kitchen and contemporary bathroom with shower offer all the comfort you need for a 'home away from home' stay."
+    },
+    {
+      "id": 6,
+      "name": "Elegance & Breathtaking View",
+      "slug": "elegance-breathtaking-view",
+      "surface": "73 sqm",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room", "Equipped kitchen", "Balcony with breathtaking view", "Equipped bathroom", "Sunny terrace"],
+      "description": "Stay in a modern and refined setting in the heart of Tangier. This spacious 73 sqm apartment welcomes you with two elegant bedrooms and a bright living room, equipped with large comfortable sofas and a Smart TV for your relaxation. Its modern, fully equipped kitchen opens onto a pleasant sunny terrace, while its private balcony offers a breathtaking view of the sea and mountains. Designed for your family vacations or business trips, this peaceful haven includes everything you need for a worry-free stay: high-speed Wi-Fi, air conditioning, quality linens, and secure parking. An idyllic setting where every detail is designed for your absolute well-being."
+    },
+    {
+      "id": 7,
+      "name": "Luxury & Serenity (73sqm)",
+      "slug": "luxury-serenity-73",
+      "surface": "73 sqm",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room", "Equipped kitchen", "Balcony with breathtaking view", "Equipped bathroom", "Safe in one bedroom"],
+      "description": "Treat yourself to an exceptional stay at the La Teral Appart-Hotel, in the heart of Tangier. This elegant 73 sqm apartment combines luxury and serenity to welcome families and business travelers in absolute comfort. The sleeping area consists of two air-conditioned and perfectly soundproofed bedrooms, one of which has a safe and a flat-screen TV. Relax in a modern and warm living room or prepare your meals in a fully equipped kitchen. A real asset, the kitchen opens onto a private balcony offering a soothing view of the mountains and the city. A modern bathroom."
+    },
+    {
+      "id": 8,
+      "name": "Luxury & Serenity (65sqm)",
+      "slug": "luxury-serenity-65",
+      "surface": "65 sqm",
+      "features": ["2 bedrooms (hypoallergenic bedding)", "Bright living room", "Equipped kitchen", "Equipped bathroom", "Smart TV in bedrooms"],
+      "description": "Discover absolute comfort in this modern 65 sqm apartment at La Teral. Ideal for families or business travelers, this air-conditioned accommodation features two spacious bedrooms with Smart TVs and soundproofed windows for total rest. Relax in a bright living room and enjoy a fully equipped kitchen (coffee machine, washing machine, microwave) as well as an elegant bathroom with complimentary toiletries. A worry-free stay awaits you."
+    }
+  ],
   "rulesSection": {
-    "badge": "Why Choose Us",
+    "badge": "Why Choose La Teral",
     "title": "Our Commitment to Excellence",
-    "subtitle": "To provide the highest quality service, we ask all clients to follow these simple guidelines"
+    "subtitle": "To guarantee the quality and serenity of your stay, we invite you to review our community living guidelines"
   },
   "rules": [
     {
-      "title": "Arrival Time",
-      "description": "Please arrive 5-10 minutes before your scheduled appointment to check-in and prepare for your service.",
-      "details": "Late arrivals may result in shortened service time or rescheduling to avoid impacting other clients."
+      "title": "Respect for Neighbors",
+      "description": "To ensure everyone's peace and quiet, please limit noise (music, TV, conversations) after 10 PM.",
+      "details": "The establishment has quality soundproofing, but courtesy is still the key to a peaceful stay for everyone."
     },
     {
-      "title": "Cancellation Policy",
-      "description": "Cancel or reschedule at least 24 hours before your appointment to avoid charges.",
-      "details": "Late cancellations or no-shows may incur a fee of 50% of the service price."
+      "title": "Parties & Events",
+      "description": "Loud parties and gatherings are not allowed in the apartments.",
+      "details": "For any special events, please contact the reception to discuss possibilities."
     },
     {
-      "title": "Children Policy",
-      "description": "Children under 12 must be accompanied by an adult at all times.",
-      "details": "For safety reasons, unsupervised children will not be permitted in the service area."
+      "title": "Windows & Security",
+      "description": "Please ensure all windows are properly closed when leaving the apartment.",
+      "details": "This ensures the security of the premises and maintains a pleasant room temperature."
     },
     {
-      "title": "Health & Safety",
-      "description": "All tools are sterilized, and fresh towels are used for each client.",
-      "details": "If you're feeling unwell, please reschedule your appointment for the safety of our staff and clients."
+      "title": "Housekeeping & Cleanliness",
+      "description": "Free housekeeping service is provided daily.",
+      "details": "We simply ask you to respect the premises as you would your own home."
     },
     {
-      "title": "Service Guarantee",
-      "description": "Not satisfied with your cut? We offer complimentary adjustments within 3 days.",
-      "details": "Adjustments must be requested within 3 days of your original service date."
+      "title": "Secure Parking",
+      "description": "Free and secure parking is available for your use.",
+      "details": "Access is strictly reserved for residents of the establishment."
     },
     {
-      "title": "Payment Methods",
-      "description": "We accept all major credit cards, cash, and digital payments.",
-      "details": "A valid credit card is required to hold all appointments."
+      "title": "Care of Equipment",
+      "description": "Household appliances and equipment must be used with care.",
+      "details": "In case of breakdown or malfunction, please contact reception immediately."
     }
   ],
   "detailedPolicies": {
     "booking": {
-      "title": "Booking Policy",
+      "title": "Booking Conditions",
       "items": [
-        "Online booking available 24/7 for your convenience",
-        "Credit card required to secure all appointments",
-        "Same-day bookings accepted based on availability",
-        "No-show or late cancellation fee: 50% of service price"
+        "Online booking available 24/7",
+        "A validation credit card will be required to confirm the reservation",
+        "Check-in from 3:00 PM - Check-out before 11:00 AM",
+        "Late arrivals are possible upon prior request"
       ]
     },
     "service": {
-      "title": "Service Guidelines",
+      "title": "Included Services",
       "items": [
-        "Consultation included before every service",
-        "Free adjustments within 3 days of service",
-        "Hygiene and sanitation protocols strictly followed",
-        "100% satisfaction guaranteed on all services"
+        "Sheets, towels, and complimentary toiletries provided",
+        "Free high-speed Wi-Fi throughout the establishment",
+        "Central air conditioning included",
+        "24/7 security service"
       ]
     }
   },
   "faqSection": {
     "badge": "Knowledge Base",
     "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to common questions about our policies and services"
+    "subtitle": "Find answers to common questions about our services and apartments"
   },
   "faqs": [
     {
-      "question": "How do I book an appointment?",
-      "answer": "You can book online through our website, call us directly, or visit our shop in person. Online booking is available 24/7."
+      "question": "How do I book an apartment?",
+      "answer": "You can book directly on our website, by phone at +212539300221, or via WhatsApp at +212676065060. Our team is available 7 days a week."
     },
     {
-      "question": "What if I need to reschedule?",
-      "answer": "You can reschedule online up to 24 hours before your appointment. For last-minute changes, please call us directly."
+      "question": "Is parking available?",
+      "answer": "Yes, we offer free and secure parking for all our residents."
     },
     {
-      "question": "Do you offer group bookings?",
-      "answer": "Yes! We accommodate group bookings for parties of 4 or more. Please call ahead to arrange special accommodations."
+      "question": "Are pets allowed?",
+      "answer": "For convenience and hygiene reasons, please contact the establishment directly to discuss your specific request."
     },
     {
-      "question": "Are walk-ins welcome?",
-      "answer": "Walk-ins are welcome based on availability, but we strongly recommend booking in advance to secure your preferred time."
+      "question": "Do you offer baby services?",
+      "answer": "Yes, upon prior request and subject to availability. Please contact us before your arrival to arrange this."
     },
     {
-      "question": "What's your refund policy?",
-      "answer": "We don't offer refunds but provide free adjustments within 3 days if you're not satisfied with your service."
+      "question": "Can I have visitors in my apartment?",
+      "answer": "For security and privacy reasons, access to the establishment is restricted to persons registered at the time of booking."
     },
     {
-      "question": "Do you have gift cards?",
-      "answer": "Yes, we offer digital and physical gift cards in any denomination. Perfect for holidays and special occasions!"
+      "question": "How does the Wi-Fi connection work?",
+      "answer": "High-speed Wi-Fi is completely free and accessible throughout the establishment. Login details will be provided upon your arrival."
     }
   ],
   "importantNotice": {
     "title": "Important Notice",
-    "content": "Policies are subject to change without prior notice. Please review our rules periodically for updates.",
-    "lastUpdated": "Last updated: December 1, 2024"
+    "content": "Our booking policy and rates are subject to change without prior notice. In cases of force majeure, the establishment reserves the right to cancel a reservation.",
+    "lastUpdated": "Last updated: March 2025"
   },
   "contactSection": {
     "title": "Still Have Questions?",
-    "subtitle": "Our team is here to help you with any questions about our policies or services",
-    "phone": "Call Us",
+    "subtitle": "Our team is here to answer any further questions you may have",
+    "phone": "Phone / WhatsApp",
     "email": "Email",
     "visit": "Visit Us",
-    "phoneNumber": "+212539300221",
+    "phoneNumber": "+212676065060",
+    "altPhoneNumber": "+212539300221",
     "emailAddress": "lateralhotel@gmail.com",
-    "address": "N16 RTE TANJA BALIA, TANGER.MAROC"
+    "address": "N16 RTE TANJA BALIA, TANGIER.MOROCCO"
   }
 }

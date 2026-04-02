@@ -1,113 +1,204 @@
 {
   "hero": {
-    "badge": "Nos Politiques",
-    "title": "Règles et Directives",
-    "description": "Nous nous efforçons d'offrir la meilleure expérience à tous nos clients. Veuillez consulter nos politiques pour garantir une visite agréable et sans encombre.",
+    "badge": "Bienvenue à La Teral",
+    "title": "L’Excellence avec La Teral",
+    "description": "Le charme de Tanger, l’exigence d’un service hôtelier. Une collection exclusive d'appartements de haut standing, alliant l'indépendance d'une résidence privée au raffinement des services les plus prestigieux.",
     "buttons": {
-      "book": "Prendre RDV",
+      "book": "Réserver Maintenant",
       "contact": "Nous Contacter"
     }
   },
+  "presentationSection": {
+    "badge": "Notre Établissement",
+    "title": "Une Expérience Unique à Tanger",
+    "description": "LA TERAL vous offre une expérience unique, sublimée par une vue panoramique spectaculaire entre mer et montagnes. Idéalement située, la résidence profite d’une proximité immédiate avec la célèbre Plage Malabata et le Parc Villa Harris, tout en étant à quelques pas des meilleurs restaurants et centres commerciaux de la ville.",
+    "subtitle": "Que votre séjour soit dédié aux affaires ou à des vacances en famille, profitez d'un cadre d'exception conçu pour l’excellence et la sérénité absolues."
+  },
+  "servicesSection": {
+    "badge": "Services & Équipements",
+    "title": "Nos Services Généraux",
+    "subtitle": "Un confort total pour un séjour sans souci",
+    "servicesList": [
+      "Climatisation centralisée",
+      "Wi-Fi haut débit gratuit disponible",
+      "Parking gratuit sécurisé",
+      "Service de ménage gratuit pendant tout le séjour",
+      "Service de sécurité 24/24 (gardien, caméras extérieures, extincteurs)",
+      "Lave-linge privative dans chaque appartement",
+      "Smart TV dans chaque chambre",
+      "Literie de qualité (anti allergique) dans toutes les chambres",
+      "Fenêtres insonorisées pour un séjour paisible",
+      "Accès par ascenseur à tous les étages",
+      "Eau chaude et froide disponibles"
+    ]
+  },
+  "apartments": [
+    {
+      "id": 1,
+      "name": "Suite Signature Luxe",
+      "slug": "suite-signature-luxe",
+      "surface": "150 m²",
+      "features": ["3 chambres", "2 salons", "1 cuisine moderne", "2 salles de bains", "2 balcons (vue montagnes)", "1 terrasse ensoleillée"],
+      "description": "Vivez l’exception à Tanger dans notre Suite Signature de 150 m² à La Teral. Cet appartement de prestige allie élégance et lumière naturelle pour offrir une atmosphère raffinée avec une vue imprenable sur la mer et les montagnes. Idéal pour les familles, il dispose de trois chambres à coucher complètes, spacieuses et insonorisées, dont l'une propose un coin élégant et convivial pour vos moments de détente ou vos petits déjeuners. Partagez des instants chaleureux dans nos deux grands salons modernes ou préparez vos repas comme à la maison dans une cuisine de dernière génération ultra-équipée (machine à café, lave-linge, four…) s'ouvrant sur une terrasse ensoleillée. Le véritable luxe ? Ses deux balcons privés offrant un spectacle permanent sur la Méditerranée, la ville et les sommets majestueux."
+    },
+    {
+      "id": 2,
+      "name": "Escale de Calme & Confort",
+      "slug": "escale-calme-confort",
+      "surface": "65 m²",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux", "Cuisine équipée", "Salle de bain équipée", "Terrasse ensoleillée"],
+      "description": "Offrez-vous un séjour paisible dans cet appartement moderne de 65 m², conçu pour votre bien-être. Profitez de deux chambres douillettes avec literie antiallergique, d'un salon lumineux avec Smart TV et d'une cuisine entièrement équipée s'ouvrant sur une terrasse ensoleillée, et salle de bain moderne. Chaque détail, de la climatisation centralisée à l’insonorisation parfaite, a été pensé pour vous offrir une sérénité totale."
+    },
+    {
+      "id": 3,
+      "name": "L'Équilibre Parfait entre Modernité et Sérénité",
+      "slug": "equilibre-modernite-serenite",
+      "surface": "73 m²",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux", "Cuisine équipée", "Balcon vue imprenable", "Salle de bain équipée", "Terrasse ensoleillée"],
+      "description": "Séjournez dans un cadre moderne et raffiné au cœur de Tanger. Ce spacieux appartement vous accueille avec deux chambres élégantes dotées d'une literie antiallergique, un salon lumineux équipé de canapés grand confort et d'une Smart TV. Sa cuisine moderne, entièrement équipée, s'ouvre sur une agréable terrasse ensoleillée, tandis que son balcon privé vous offre une vue imprenable sur les montagnes. Un cadre idyllique, pensé pour vos vacances en famille ou vos voyages d’affaires."
+    },
+    {
+      "id": 4,
+      "name": "L'alliance du Confort & de la Chaleur",
+      "slug": "alliance-confort-chaleur",
+      "surface": "73 m²",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux", "Cuisine équipée", "Balcon vue imprenable", "Salle de bain équipée"],
+      "description": "Bienvenue dans un cadre moderne et chaleureux, pensé pour votre bien-être absolu. Ce spacieux appartement de 73 m² vous accueille avec deux chambres douillettes, dotées d'une literie antiallergique et de fenêtres insonorisées pour vous garantir des nuits d'un calme total. Détendez-vous dans un salon baigné de lumière ou profitez de votre cuisine équipée s'ouvrant sur un balcon privatif avec une vue imprenable. Sa salle de bain contemporaine, avec douche moderne, complète ce cocon de confort idéal pour vos séjours à Tanger."
+    },
+    {
+      "id": 5,
+      "name": "Cosy et Lumineux",
+      "slug": "cosy-lumineux",
+      "surface": "65 m²",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux", "Cuisine équipée", "Salle de bain équipée"],
+      "description": "Séjournez dans un cadre moderne et apaisant, idéalement situé au cœur de Tanger. L’Appartement N°5 vous accueille avec deux chambres confortables pensées pour votre repos, ainsi qu'un salon lumineux équipé de canapés moelleux et d'une Smart TV pour vos moments de détente. Sa cuisine entièrement équipée et sa salle de bains contemporaine avec douche vous offrent tout le confort nécessaire pour un séjour 'comme à la maison'."
+    },
+    {
+      "id": 6,
+      "name": "Elégance & Vue Imprenable",
+      "slug": "elegance-vue-imprenable",
+      "surface": "73 m²",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux", "Cuisine équipée", "Balcon vue imprenable", "Salle de bain équipée", "Terrasse ensoleillée"],
+      "description": "Séjournez dans un cadre moderne et raffiné au cœur de Tanger. Ce spacieux appartement de 73 m² vous accueille avec deux chambres élégantes et un salon lumineux, équipé de canapés grand confort et d'une Smart TV pour vos moments de détente. Sa cuisine moderne et entièrement équipée s'ouvre sur une agréable terrasse ensoleillée, tandis que son balcon privé vous offre une vue imprenable sur la mer et les montagnes. Pensé pour vos vacances en famille ou vos voyages d’affaires, ce havre de paix inclut tout le nécessaire pour un séjour sans souci : connexion Wi-Fi haut débit, climatisation, linge de maison de qualité et parking sécurisé. Un cadre idyllique où chaque détail est conçu pour votre bien-être absolu."
+    },
+    {
+      "id": 7,
+      "name": "Luxe et Sérénité (73m²)",
+      "slug": "luxe-serenite-73",
+      "surface": "73 m²",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux", "Cuisine équipée", "Balcon vue imprenable", "Salle de bain équipée", "Coffre-fort dans une chambre"],
+      "description": "Offrez-vous un séjour d'exception à l'Appart-Hôtel La Teral, au cœur de Tanger. Cet élégant appartement de 73 m² allie luxe et sérénité pour accueillir familles et voyageurs d'affaires dans un confort absolu. L'espace nuit se compose de deux chambres climatisées et parfaitement insonorisées, dont l'une dispose d'un coffre-fort et d'un écran plat. Détendez-vous dans un salon moderne et chaleureux ou préparez vos repas dans une cuisine entièrement équipée. Véritable atout charme, la cuisine s'ouvre sur un balcon privé offrant une vue apaisante sur les montagnes et la ville. Une salle de bain moderne."
+    },
+    {
+      "id": 8,
+      "name": "Luxe et Sérénité (65m²)",
+      "slug": "luxe-serenite-65",
+      "surface": "65 m²",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux", "Cuisine équipée", "Salle de bain équipée", "Smart TV dans les chambres"],
+      "description": "Découvrez le confort absolu dans cet appartement moderne de 65 m² à La Teral. Idéal pour les familles ou les voyages d'affaires, ce logement climatisé dispose de deux chambres spacieuses avec Smart TV et vitrages insonorisés pour un repos total. Détendez-vous dans un salon lumineux et profitez d'une cuisine entièrement équipée (machine à café, lave-linge, micro-ondes) ainsi qu'une salle de bain élégante avec articles de toilette offerts. Un séjour sans souci vous attend."
+    }
+  ],
   "rulesSection": {
-    "badge": "Pourquoi Nous Choisir",
+    "badge": "Pourquoi Choisir La Teral",
     "title": "Notre Engagement d'Excellence",
-    "subtitle": "Pour fournir un service de la plus haute qualité, nous demandons à tous nos clients de suivre ces directives simples"
+    "subtitle": "Pour garantir la qualité et la sérénité de votre séjour, nous vous invitons à prendre connaissance de nos quelques règles de vie en communauté"
   },
   "rules": [
     {
-      "title": "Heure d'Arrivée",
-      "description": "Veuillez arriver 5 à 10 minutes avant votre rendez-vous programmé pour vous enregistrer et préparer votre service.",
-      "details": "Les arrivées tardives peuvent entraîner une durée de service réduite ou un report pour ne pas impacter les autres clients."
+      "title": "Respect du Voisinage",
+      "description": "Pour préserver la tranquillité de tous, merci de limiter les bruits (musique, télévision, conversations) après 22h.",
+      "details": "L'établissement dispose d'une insonorisation de qualité, mais la courtoisie reste la clé d'un séjour paisible pour tous."
     },
     {
-      "title": "Politique d'Annulation",
-      "description": "Annulez ou reportez au moins 24 heures avant votre rendez-vous pour éviter des frais.",
-      "details": "Les annulations tardives ou les absences peuvent entraîner des frais de 50% du prix du service."
+      "title": "Fêtes et Événements",
+      "description": "Les fêtes et rassemblements bruyants ne sont pas autorisés dans les appartements.",
+      "details": "Pour tout événement spécial, merci de contacter la réception pour étudier les possibilités."
     },
     {
-      "title": "Politique Enfants",
-      "description": "Les enfants de moins de 12 ans doivent être accompagnés d'un adulte en tout temps.",
-      "details": "Pour des raisons de sécurité, les enfants non accompagnés ne seront pas autorisés dans la zone de service."
+      "title": "Fenêtres et Sécurité",
+      "description": "Merci de veiller à bien fermer les fenêtres en quittant l'appartement.",
+      "details": "Cela permet d'assurer la sécurité des lieux et de maintenir une température ambiante agréable."
     },
     {
-      "title": "Santé et Sécurité",
-      "description": "Tous les outils sont stérilisés et des serviettes fraîches sont utilisées pour chaque client.",
-      "details": "Si vous ne vous sentez pas bien, veuillez reporter votre rendez-vous pour la sécurité de notre personnel et de nos clients."
+      "title": "Ménage et Propreté",
+      "description": "Un service de ménage gratuit est assuré quotidiennement.",
+      "details": "Nous vous demandons simplement de respecter les lieux comme vous le feriez chez vous."
     },
     {
-      "title": "Garantie de Service",
-      "description": "Pas satisfait de votre coupe ? Nous offrons des ajustements gratuits dans les 3 jours.",
-      "details": "Les ajustements doivent être demandés dans les 3 jours suivant la date de votre service d'origine."
+      "title": "Parking Sécurisé",
+      "description": "Un parking gratuit et sécurisé est à votre disposition.",
+      "details": "L'accès est strictement réservé aux résidents de l'établissement."
     },
     {
-      "title": "Moyens de Paiement",
-      "description": "Nous acceptons toutes les principales cartes de crédit, les espèces et les paiements numériques.",
-      "details": "Une carte de crédit valide est requise pour confirmer tous les rendez-vous."
+      "title": "Respect des Équipements",
+      "description": "Les appareils électroménagers et équipements doivent être utilisés avec soin.",
+      "details": "En cas de panne ou dysfonctionnement, veuillez contacter immédiatement la réception."
     }
   ],
   "detailedPolicies": {
     "booking": {
-      "title": "Politique de Réservation",
+      "title": "Conditions de Réservation",
       "items": [
-        "Réservation en ligne disponible 24h/24 et 7j/7 pour votre confort",
-        "Carte de crédit requise pour sécuriser tous les rendez-vous",
-        "Réservations le jour même acceptées selon disponibilité",
-        "Frais d'absence ou d'annulation tardive : 50% du prix du service"
+        "Réservation en ligne disponible 24h/24 et 7j/7",
+        "Une carte bancaire de validation vous sera demandée pour confirmer la réservation",
+        "Arrivée à partir de 15h00 - Départ avant 11h00",
+        "Les arrivées tardives sont possibles sur demande préalable"
       ]
     },
     "service": {
-      "title": "Directives de Service",
+      "title": "Prestations Incluses",
       "items": [
-        "Consultation incluse avant chaque service",
-        "Ajustements gratuits dans les 3 jours suivant le service",
-        "Protocoles d'hygiène et d'assainissement strictement suivis",
-        "Satisfaction à 100% garantie sur tous les services"
+        "Draps, serviettes et articles de toilette offerts",
+        "Connexion Wi-Fi haut débit gratuite dans tout l'établissement",
+        "Climatisation centralisée incluse",
+        "Service de sécurité 24h/24 et 7j/7"
       ]
     }
   },
   "faqSection": {
     "badge": "Base de Connaissances",
     "title": "Foire Aux Questions",
-    "subtitle": "Trouvez des réponses aux questions courantes sur nos politiques et services"
+    "subtitle": "Trouvez les réponses aux questions les plus fréquentes sur nos services et nos appartements"
   },
   "faqs": [
     {
-      "question": "Comment puis-je prendre rendez-vous ?",
-      "answer": "Vous pouvez réserver en ligne sur notre site web, nous appeler directement, ou visiter notre salon en personne. La réservation en ligne est disponible 24h/24 et 7j/7."
+      "question": "Comment puis-je réserver un appartement ?",
+      "answer": "Vous pouvez réserver directement sur notre site web, par téléphone au +212539300221, ou par WhatsApp au +212676065060. Notre équipe se tient à votre disposition 7j/7."
     },
     {
-      "question": "Que faire si j'ai besoin de reporter mon rendez-vous ?",
-      "answer": "Vous pouvez reporter en ligne jusqu'à 24 heures avant votre rendez-vous. Pour les changements de dernière minute, veuillez nous appeler directement."
+      "question": "Y a-t-il un parking disponible ?",
+      "answer": "Oui, nous mettons à votre disposition un parking gratuit et sécurisé pour tous nos résidents."
     },
     {
-      "question": "Proposez-vous des réservations de groupe ?",
-      "answer": "Oui ! Nous acceptons les réservations de groupe pour les groupes de 4 personnes ou plus. Veuillez nous appeler à l'avance pour organiser des aménagements spéciaux."
+      "question": "Les animaux sont-ils acceptés ?",
+      "answer": "Pour des raisons de commodité et d'hygiène, nous vous invitons à contacter directement l'établissement afin d'étudier votre demande spécifique."
     },
     {
-      "question": "Les clients sans rendez-vous sont-ils les bienvenus ?",
-      "answer": "Les clients sans rendez-vous sont les bienvenus selon disponibilité, mais nous recommandons fortement de réserver à l'avance pour garantir votre créneau horaire préféré."
+      "question": "Proposez-vous des services pour les bébés ?",
+      "answer": "Oui, sur demande préalable et sous réserve de disponibilité. Merci de nous contacter avant votre arrivée pour organiser cela."
     },
     {
-      "question": "Quelle est votre politique de remboursement ?",
-      "answer": "Nous n'offrons pas de remboursements mais fournissons des ajustements gratuits dans les 3 jours si vous n'êtes pas satisfait de votre service."
+      "question": "Puis-je recevoir des visiteurs dans mon appartement ?",
+      "answer": "Pour des raisons de sécurité et de respect de la vie privée, l'accès à l'établissement est réservé aux personnes enregistrées lors de la réservation."
     },
     {
-      "question": "Avez-vous des cartes cadeaux ?",
-      "answer": "Oui, nous proposons des cartes cadeaux numériques et physiques de n'importe quelle valeur. Parfaites pour les fêtes et les occasions spéciales !"
+      "question": "Comment fonctionne la connexion Wi-Fi ?",
+      "answer": "Le Wi-Fi haut débit est totalement gratuit et accessible dans tout l'établissement. Les identifiants vous seront fournis à votre arrivée."
     }
   ],
   "importantNotice": {
-    "title": "Avis Important",
-    "content": "Les politiques sont sujettes à modification sans préavis. Veuillez consulter périodiquement nos règles pour les mises à jour.",
-    "lastUpdated": "Dernière mise à jour : 1er décembre 2024"
+    "title": "Note Importante",
+    "content": "Notre politique de réservation et nos tarifs sont susceptibles d'être modifiés sans préavis. En cas de force majeure, l'établissement se réserve le droit d'annuler une réservation.",
+    "lastUpdated": "Dernière mise à jour : Mars 2025"
   },
   "contactSection": {
     "title": "Vous avez encore des questions ?",
-    "subtitle": "Notre équipe est là pour vous aider avec toutes vos questions concernant nos politiques ou services",
-    "phone": "Appelez-nous",
+    "subtitle": "Notre équipe est à votre écoute pour toute information complémentaire",
+    "phone": "Téléphone / WhatsApp",
     "email": "E-mail",
-    "visit": "Visitez-nous",
-    "phoneNumber": "+212539300221",
+    "visit": "Nous Visiter",
+    "phoneNumber": "+212676065060",
+    "altPhoneNumber": "+212539300221",
     "emailAddress": "lateralhotel@gmail.com",
     "address": "N16 RTE TANJA BALIA, TANGER.MAROC"
   }
