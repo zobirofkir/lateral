@@ -1,0 +1,27 @@
+{
+  "badge": "✨ Luxury & Comfort",
+  "hotel_name": "Hôtel Lateral",
+  "city": "Tangier",
+  "description": "Discover Moroccan excellence. An exceptional stay where luxury meets authenticity, with a breathtaking view of the Strait of Gibraltar.",
+  "features": {
+    "panoramic_view": "✓ Panoramic view",
+    "spa": "✓ Spa & Wellness",
+    "restaurant": "✓ Gastronomic Restaurant",
+    "pool": "✓ Infinity Pool"
+  },
+  "rating": "5.0 • 1,250+ reviews",
+  "booking": {
+    "title": "Book Your Stay",
+    "subtitle": "Best price guaranteed",
+    "check_in": "Check-in Date",
+    "check_out": "Check-out Date",
+    "guests": "Number of guests",
+    "guest": "guest",
+    "guests_plural": "guests",
+    "adults": "Adults",
+    "validate": "Confirm",
+    "submit": "Book Now",
+    "free_cancellation": "Free cancellation within 24h • Secure payment",
+    "special_offer": "🔥 -20% on your first booking"
+  }
+}
