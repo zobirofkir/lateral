@@ -1,0 +1,14 @@
+{
+  "welcome": "Bienvenue",
+  "hotel_name": "L'Hôtel Lateral",
+  "description_1": "Situé au cœur vibrant de la médina de Tanger, l'Hôtel Lateral est une adresse emblématique du Petit Socco. Son emplacement privilégié, à deux pas de la Kasbah et à seulement cinq minutes à pied du port de Tanger, en fait un point de départ idéal pour découvrir la ville.",
+  "description_2": "Entouré de ruelles historiques, de cafés authentiques et d'une atmosphère intemporelle, l'hôtel offre à ses visiteurs une immersion totale dans l'âme culturelle et vivante de Tanger. Que ce soit pour explorer ses sites mythiques, profiter de sa lumière unique ou se perdre dans l'ambiance animée de la médina, l'Hôtel Lateral promet une expérience authentique et inoubliable.",
+  "rating": {
+    "value": "4.8 Étoiles",
+    "label": "Note des clients"
+  },
+  "award": {
+    "title": "Top Choice",
+    "label": "Prix d'Excellence 2024"
+  }
+}

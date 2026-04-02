@@ -1,0 +1,14 @@
+{
+  "welcome": "Welcome",
+  "hotel_name": "Hôtel Lateral",
+  "description_1": "Located in the vibrant heart of the Tangier medina, Hôtel Lateral is an iconic address in Petit Socco. Its privileged location, steps from the Kasbah and just a five-minute walk from Tangier port, makes it an ideal starting point to discover the city.",
+  "description_2": "Surrounded by historic streets, authentic cafes, and a timeless atmosphere, the hotel offers visitors a complete immersion in the cultural and living soul of Tangier. Whether to explore its mythical sites, enjoy its unique light, or lose yourself in the lively medina atmosphere, Hôtel Lateral promises an authentic and unforgettable experience.",
+  "rating": {
+    "value": "4.8 Stars",
+    "label": "Customer rating"
+  },
+  "award": {
+    "title": "Top Choice",
+    "label": "Excellence Award 2024"
+  }
+}

@@ -40,9 +40,6 @@ const MainImageSectionComponent = ({
                 <h3 className="text-white text-xl font-semibold">
                   {selectedImage.title}
                 </h3>
-                <p className="text-white/80 text-sm">
-                  Cliquez sur les images ci-dessous pour explorer
-                </p>
               </motion.div>
             </div>
           </motion.div>
