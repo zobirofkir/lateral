@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import { Star, Trophy } from 'lucide-react';
 
 const TextContentComponent = ({
     containerVariants,
@@ -50,25 +51,31 @@ const TextContentComponent = ({
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex gap-4 pt-4">
+              
+              {/* Rating */}
               <div className="flex items-center gap-2">
                 <div className="w-10 h-10 rounded-full bg-[#D4B896]/20 flex items-center justify-center">
-                  <span className="text-[#6B3410] text-xl">⭐</span>
+                  <Star className="w-5 h-5 text-[#6B3410] fill-[#6B3410]" />
                 </div>
                 <div>
                   <p className="text-sm text-[#5C2E0B]">4.8 Étoiles</p>
                   <p className="text-xs text-[#5C2E0B]/60">Note des clients</p>
                 </div>
               </div>
+
+              {/* Award */}
               <div className="flex items-center gap-2">
                 <div className="w-10 h-10 rounded-full bg-[#D4B896]/20 flex items-center justify-center">
-                  <span className="text-[#6B3410] text-xl">🏆</span>
+                  <Trophy className="w-5 h-5 text-[#6B3410]" />
                 </div>
                 <div>
                   <p className="text-sm text-[#5C2E0B]">Top Choice</p>
                   <p className="text-xs text-[#5C2E0B]/60">2024 Award</p>
                 </div>
               </div>
+
             </motion.div>
+
           </motion.div>
     </>
   )
