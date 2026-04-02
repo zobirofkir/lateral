@@ -52,7 +52,7 @@ const itemVariants = {
 
 const WhyComponent = () => {
   return (
-    <section className="relative w-full py-20 text-white">
+    <section className="relative w-full h-screen py-20 text-white">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
