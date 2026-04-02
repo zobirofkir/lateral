@@ -1,45 +1,81 @@
 {
-  "title": "Explorez nos chambres",
-  "subtitle": "Prix, Confort et Authenticité",
+  "title": "Explorez nos Appartements",
+  "subtitle": "Luxe, Confort et Sérénité à Tanger",
   "rooms": [
     {
       "id": 1,
-      "title": "Chambre Simple",
-      "price": "À partir de 450 MAD",
-      "description": "Une chambre de style et parfaitement équipée, idéale pour les voyageurs solos en quête de confort et de tranquillité.",
-      "features": ["Lit simple", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée"],
-      "size": "15 m²",
-      "capacity": "1 personne"
+      "title": "Suite Signature Luxe",
+      "price": "Sur devis",
+      "description": "Vivez l'exception à Tanger dans notre Suite Signature de 150 m² à La Teral. Cet appartement de prestige allie élégance et lumière naturelle pour offrir une atmosphère raffinée avec une vue imprenable sur la mer et les montagnes. Idéal pour les familles, il dispose de trois chambres à coucher complètes, spacieuses et insonorisées, dont l'une propose un coin élégant et convivial pour vos moments de détente ou vos petits déjeuners. Partagez des instants chaleureux dans nos deux grands salons modernes ou préparez vos repas comme à la maison dans une cuisine de dernière génération ultra-équipée s'ouvrant sur une terrasse ensoleillée. Le véritable luxe ? Ses deux balcons privés offrant un spectacle permanent sur la Méditerranée, la ville et les sommets majestueux.",
+      "features": ["3 chambres à coucher", "2 salons", "Cuisine moderne ultra-équipée", "2 salles de bains", "2 balcons avec vue sur montagnes", "1 terrasse ensoleillée", "Climatisation centralisée", "Fenêtres insonorisées"],
+      "size": "150 m²",
+      "capacity": "6 personnes"
     },
     {
       "id": 2,
-      "title": "Chambre Double",
-      "price": "À partir de 650 MAD",
-      "description": "Un espace chaleureux pensé pour les couples, offrant tout le confort nécessaire pour un séjour relaxant.",
-      "features": ["Lit double", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision"],
-      "size": "22 m²",
-      "capacity": "2 personnes"
+      "title": "Escale de Calme & Confort",
+      "price": "Sur devis",
+      "description": "Offrez-vous un séjour paisible dans cet appartement moderne de 65 m², conçu pour votre bien-être. Profitez de deux chambres douillettes avec literie antiallergique, d'un salon lumineux avec Smart TV et d'une cuisine entièrement équipée s'ouvrant sur une terrasse ensoleillée, et salle de bain moderne. Chaque détail, de la climatisation centralisée à l'insonorisation parfaite, a été pensé pour vous offrir une sérénité totale.",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux avec Smart TV", "Cuisine équipée", "Salle de bain moderne", "Terrasse ensoleillée", "Climatisation centralisée", "Fenêtres insonorisées"],
+      "size": "65 m²",
+      "capacity": "4 personnes"
     },
     {
       "id": 3,
-      "title": "Chambre Double Twin",
-      "price": "À partir de 650 MAD",
-      "description": "La solution parfaite pour amis ou collègues avec deux lits séparés et un confort optimal.",
-      "features": ["2 lits simples", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision"],
-      "size": "22 m²",
-      "capacity": "2 personnes"
+      "title": "L'Équilibre Parfait entre Modernité et Sérénité",
+      "price": "Sur devis",
+      "description": "Séjournez dans un cadre moderne et raffiné au cœur de Tanger. Ce spacieux appartement vous accueille avec deux chambres élégantes dotées d'une literie antiallergique, un salon lumineux équipé de canapés grand confort et d'une Smart TV. Sa cuisine moderne, entièrement équipée, s'ouvre sur une agréable terrasse ensoleillée, tandis que son balcon privé vous offre une vue imprenable sur les montagnes. Un cadre idyllique, pensé pour vos vacances en famille ou vos voyages d'affaires.",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux avec Smart TV", "Cuisine équipée", "Salle de bain équipée", "Balcon vue imprenable", "Terrasse ensoleillée"],
+      "size": "73 m²",
+      "capacity": "4 personnes"
     },
     {
       "id": 4,
-      "title": "Chambre Familiale",
-      "price": "À partir de 950 MAD",
-      "description": "Un grand espace conçu pour accueillir toute la famille dans le confort et la convivialité.",
-      "features": ["2 lits doubles", "Wi-Fi gratuit", "Climatisation", "Salle de bain privée", "Télévision", "Espace salon"],
-      "size": "35 m²",
+      "title": "L'Alliance du Confort & la Chaleur",
+      "price": "Sur devis",
+      "description": "Bienvenue dans un cadre moderne et chaleureux, pensé pour votre bien-être absolu. Ce spacieux appartement de 73 m² vous accueille avec deux chambres douillettes, dotées d'une literie antiallergique et de fenêtres insonorisées pour vous garantir des nuits d'un calme total. Détendez-vous dans un salon baigné de lumière ou profitez de votre cuisine équipée s'ouvrant sur un balcon privatif avec une vue imprenable. Sa salle de bain contemporaine, avec douche moderne, complète ce cocon de confort idéal pour vos séjours à Tanger.",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux", "Cuisine équipée", "Salle de bain contemporaine avec douche", "Balcon privatif vue imprenable", "Fenêtres insonorisées"],
+      "size": "73 m²",
+      "capacity": "4 personnes"
+    },
+    {
+      "id": 5,
+      "title": "Cosy et Lumineux",
+      "price": "Sur devis",
+      "description": "Séjournez dans un cadre moderne et apaisant, idéalement situé au cœur de Tanger. L'Appartement N°5 vous accueille avec deux chambres confortables pensées pour votre repos, ainsi qu'un salon lumineux équipé de canapés moelleux et d'une Smart TV pour vos moments de détente. Sa cuisine entièrement équipée et sa salle de bains contemporaine avec douche vous offrent tout le confort nécessaire pour un séjour 'comme à la maison'.",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux avec Smart TV", "Cuisine entièrement équipée", "Salle de bain contemporaine avec douche"],
+      "size": "65 m²",
+      "capacity": "4 personnes"
+    },
+    {
+      "id": 6,
+      "title": "Elégance & Vue Imprenable",
+      "price": "Sur devis",
+      "description": "Séjournez dans un cadre moderne et raffiné au cœur de Tanger. Ce spacieux appartement de 73 m² vous accueille avec deux chambres élégantes et un salon lumineux, équipé de canapés grand confort et d'une Smart TV pour vos moments de détente. Sa cuisine moderne et entièrement équipée s'ouvre sur une agréable terrasse ensoleillée, tandis que son balcon privé vous offre une vue imprenable sur la mer et les montagnes. Pensé pour vos vacances en famille ou vos voyages d'affaires, ce havre de paix inclut tout le nécessaire pour un séjour sans souci : connexion Wi-Fi haut débit, climatisation, linge de maison de qualité et parking sécurisé.",
+      "features": ["2 chambres (literie antiallergique)", "Salon lumineux avec Smart TV", "Cuisine moderne équipée", "Salle de bain équipée", "Balcon vue imprenable sur mer et montagnes", "Terrasse ensoleillée", "Wi-Fi haut débit", "Climatisation", "Parking sécurisé"],
+      "size": "73 m²",
+      "capacity": "4 personnes"
+    },
+    {
+      "id": 7,
+      "title": "Luxe et Sérénité",
+      "price": "Sur devis",
+      "description": "Offrez-vous un séjour d'exception à l'Appart-Hôtel La Teral, au cœur de Tanger. Cet élégant appartement de 73 m² allie luxe et sérénité pour accueillir familles et voyageurs d'affaires dans un confort absolu. L'espace nuit se compose de deux chambres climatisées et parfaitement insonorisées, dont l'une dispose d'un coffre-fort et d'un écran plat. Détendez-vous dans un salon moderne et chaleureux ou préparez vos repas dans une cuisine entièrement équipée. Véritable atout charme, la cuisine s'ouvre sur un balcon privé offrant une vue apaisante sur les montagnes et la ville. Une salle de bain moderne.",
+      "features": ["2 chambres climatisées et insonorisées", "Coffre-fort", "Écran plat", "Salon moderne", "Cuisine entièrement équipée", "Balcon privé vue sur montagnes et ville", "Salle de bain moderne"],
+      "size": "73 m²",
+      "capacity": "4 personnes"
+    },
+    {
+      "id": 8,
+      "title": "Luxe et Sérénité",
+      "price": "Sur devis",
+      "description": "Découvrez le confort absolu dans cet appartement moderne de 65 m² à La Teral. Idéal pour les familles ou les voyages d'affaires, ce logement climatisé dispose de deux chambres spacieuses avec Smart TV et vitrages insonorisés pour un repos total. Détendez-vous dans un salon lumineux et profitez d'une cuisine entièrement équipée (machine à café, lave-linge, micro-ondes) ainsi qu'une salle de bain élégante avec articles de toilette offerts. Pour un séjour sans souci.",
+      "features": ["2 chambres spacieuses avec Smart TV", "Vitrages insonorisés", "Salon lumineux", "Cuisine équipée (machine à café, lave-linge, micro-ondes)", "Salle de bain élégante avec articles de toilette", "Climatisation"],
+      "size": "65 m²",
       "capacity": "4 personnes"
     }
   ],
   "see_more": "Voir plus",
-  "included_features": "Toutes nos chambres incluent : Wi-Fi haut débit, climatisation, et salle de bain privative",
+  "included_features": "Tous nos appartements incluent : Wi-Fi haut débit, climatisation, literie de qualité antiallergique, fenêtres insonorisées, et serviettes de bain",
   "view_all_offers": "Voir toutes nos offres"
 }
