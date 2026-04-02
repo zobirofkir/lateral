@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useI18n } from "@/contexts/I18nContext";
 
 const DiscoverTangerPage = () => {
   const articles = [
@@ -33,13 +34,17 @@ const DiscoverTangerPage = () => {
     },
   ];
 
+  const { t } = useI18n();
+  const discoverModule = t.discoverModule || {};
+
+
   return (
     <div className="py-12 md:py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-[#6B0F0F]">
-            Découvrir Tanger : Entre culture, mer et histoire
+            {discoverModule.title}
           </h2>
           <div className="w-24 h-1 bg-green-500 mt-3 rounded-full"></div>
         </div>

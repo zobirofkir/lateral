@@ -31,6 +31,7 @@ const loadLocalTranslations = async (locale: Locale) => {
     const galleryTitle = await import(`../locales/${locale}/${locale}-gallerytitle.json`);
     const whyModule = await import(`../locales/${locale}/${locale}-why.json`);
     const roomsModule = await import(`../locales/${locale}/${locale}-rooms.json`);
+    const discoverModule = await import(`../locales/${locale}/${locale}-discover.json`);
 
     return {
       header: headerModule.default,
@@ -39,7 +40,8 @@ const loadLocalTranslations = async (locale: Locale) => {
       textContent: textContentModule.default,
       galleryTitle: galleryTitle.default,
       whyModule: whyModule.default,
-      roomsModule: roomsModule.default
+      roomsModule: roomsModule.default,
+      discoverModule: discoverModule.default,
       
     };
   } catch (error) {
