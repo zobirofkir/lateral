@@ -15,34 +15,29 @@ const I18nContext = createContext<I18nContextType | undefined>(undefined);
 const getInitialLocale = (): Locale => {
   if (typeof window === 'undefined') return 'en';
   const savedLocale = localStorage.getItem('locale') as Locale | null;
-  // إزالة 'ar' لأننا ندعم فقط 'en' و 'fr'
+
   return savedLocale && (savedLocale === 'en' || savedLocale === 'fr') 
     ? savedLocale 
     : 'en';
 };
 
-// تصحيح أسماء الملفات لتتناسب مع هيكل مجلداتك
 const loadLocalTranslations = async (locale: Locale) => {
   try {
-    // تصحيح: الملفات مسماة en-header.json و fr-header.json
     const headerModule = await import(`../locales/${locale}/${locale}-header.json`);
     
-    // هذه الملفات غير موجودة حالياً، سنتعامل معها بشكل آمن
     let homeModule = {};
     let footerModule = {};
     
     try {
       homeModule = await import(`../locales/${locale}/${locale}-home.json`);
     } catch (e) {
-      // الملف غير موجود، نستخدم كائن فارغ
-      console.log(`Home translations not found for ${locale}`);
+      //
     }
     
     try {
       footerModule = await import(`../locales/${locale}/${locale}-footer.json`);
     } catch (e) {
-      // الملف غير موجود، نستخدم كائن فارغ
-      console.log(`Footer translations not found for ${locale}`);
+      //
     }
     
     return {
@@ -93,21 +88,19 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     setLocaleState(newLocale);
     localStorage.setItem('locale', newLocale);
     document.documentElement.lang = newLocale;
-    // إضافة دعم RTL (الفرنسية والإنجليزية LTR)
     document.documentElement.dir = 'ltr';
   };
 
   useEffect(() => {
     document.documentElement.lang = locale;
-    document.documentElement.dir = 'ltr'; // الفرنسية والإنجليزية LTR
+    document.documentElement.dir = 'ltr'; 
   }, [locale]);
 
-  // إضافة الدالة المفقودة dir
   const value: I18nContextType = {
     locale,
     setLocale,
     t: translations[locale] || { header: {}, home: {}, footer: {} },
-    dir: 'ltr', // كلتا اللغتين LTR
+    dir: 'ltr', 
     loading,
   };
 
