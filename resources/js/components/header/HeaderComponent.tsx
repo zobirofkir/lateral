@@ -68,6 +68,7 @@ const HeaderComponent = () => {
           setCurrentLang={setCurrentLang}
           languages={languages}
           currentLang={currentLang}
+          changeLanguage={changeLanguage}
       />
 
       <BackDropOverlayComponent isOpen={isOpen} setIsOpen={setIsOpen} />      

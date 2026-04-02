@@ -8,7 +8,7 @@ const MobileMenuComponent = ({
     navLinks,
     mobileItemVariants,
     setIsOpen,
-    setCurrentLang,
+    changeLanguage,
     languages,
     currentLang
 }) => {
@@ -60,7 +60,7 @@ const MobileMenuComponent = ({
                       key={lang.code}
                       whileTap={{ scale: 0.95 }}
                       onClick={() => {
-                        setCurrentLang(lang);
+                        changeLanguage(lang.code);
                         setIsOpen(false);
                       }}
                       className={`flex flex-col items-center gap-1 py-2 px-3 rounded-lg transition-all ${
