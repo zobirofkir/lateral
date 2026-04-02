@@ -23,7 +23,7 @@ const TextContentComponent = ({
                 </span>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-[#3E2723] mb-4">
-                L'Hôtel Mauritania
+                L'Hôtel Lateral
               </h3>
             </motion.div>
 
@@ -31,7 +31,7 @@ const TextContentComponent = ({
               variants={itemVariants}
               className="text-[#5C2E0B] leading-relaxed text-base md:text-lg"
             >
-              Situé au cœur vibrant de la médina de Tanger, l'Hôtel Mauritania est
+              Situé au cœur vibrant de la médina de Tanger, l'Hôtel Lateral est
               une adresse emblématique du Petit Socco. Son emplacement privilégié,
               à deux pas de la Kasbah et à seulement cinq minutes à pied du port de
               Tanger, en fait un point de départ idéal pour découvrir la ville.
@@ -45,7 +45,7 @@ const TextContentComponent = ({
               atmosphère intemporelle, l'hôtel offre à ses visiteurs une immersion
               totale dans l'âme culturelle et vivante de Tanger. Que ce soit pour
               explorer ses sites mythiques, profiter de sa lumière unique ou se
-              perdre dans l'ambiance animée de la médina, l'Hôtel Mauritania promet
+              perdre dans l'ambiance animée de la médina, l'Hôtel Lateral promet
               une expérience authentique et inoubliable.
             </motion.p>
 
