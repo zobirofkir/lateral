@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import VideoBackgroundComponent from './VideoBackgroundComponent';
 import LeftColumnComponent from './LeftColumnComponent';
 import RightColumnComponent from './RightColumnComponent';
+import VideoControlsComponent from './VideoControlsComponent';
+import ScrollIndecatorComponent from './ScrollIndecatorComponent';
 
 const SliderComponent = () => {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -83,33 +85,15 @@ const SliderComponent = () => {
       </div>
 
       {/* Video Controls */}
-      <div className="absolute bottom-6 left-6 z-20 flex gap-3 bg-[#2A1506]/80 backdrop-blur-md rounded-full p-2 shadow-lg">
-        <button
-          onClick={togglePlayPause}
-          className="p-2 hover:bg-[#6B3410] rounded-full transition-colors text-white"
-          aria-label={isPlaying ? "Pause" : "Play"}
-        >
-          {isPlaying ? <Pause size={20} /> : <Play size={20} />}
-        </button>
-        <button
-          onClick={toggleMute}
-          className="p-2 hover:bg-[#6B3410] rounded-full transition-colors text-white"
-          aria-label={isMuted ? "Unmute" : "Mute"}
-        >
-          {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
-        </button>
-      </div>
+      <VideoControlsComponent 
+          togglePlayPause={togglePlayPause}
+          toggleMute={toggleMute}
+          isPlaying={isPlaying}
+          isMuted={isMuted}
+      />
 
       {/* Scroll Indicator */}
-      <motion.div
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden sm:block"
-      >
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-2 bg-white rounded-full mt-2 animate-bounce" />
-        </div>
-      </motion.div>
+      <ScrollIndecatorComponent />
 
       {/* Decorative Elements */}
       <div className="absolute top-20 right-10 w-64 h-64 bg-[#D4A574]/5 rounded-full blur-3xl pointer-events-none"></div>
