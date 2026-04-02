@@ -137,14 +137,13 @@ const RoomsComponent = () => {
                   </div>
 
                   {/* See More Button */}
-                  <motion.button
-                    whileHover={{ x: 5 }}
-                    whileTap={{ scale: 0.98 }}
+                  <Link
+                    href={`/rooms/${room.id}`}
                     className="w-full sm:w-auto group/btn flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#D4B896] to-[#6B3410] text-white rounded-lg font-medium text-sm transition-all duration-300 hover:shadow-lg"
                   >
                     <span>{roomsContent.see_more}</span>
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </motion.button>
+                  </Link>
                 </div>
 
                 {/* Decorative Border on Hover */}
