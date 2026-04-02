@@ -9,7 +9,6 @@ const TextContentComponent = ({
 }) => {
     const { t } = useI18n();
     
-    // الحصول على ترجمات المكون
     const content = t.textContent || {};
 
     return (
