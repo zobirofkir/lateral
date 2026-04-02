@@ -15,7 +15,7 @@ const DiscoverTangerPage = () => {
   } = useDiscover();
 
   return (
-    <div className="py-12 md:py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
+    <div className="py-12 md:py-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <motion.div
