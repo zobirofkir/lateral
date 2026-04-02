@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { ArrowRight, Users, BedDouble, BedSingle, Wifi, Coffee, Wind, Tv } from 'lucide-react';
 import { useI18n } from '@/contexts/I18nContext';
+import { Link } from '@inertiajs/react';
 
 const getRoomIcon = (title: string) => {
   if (title.includes("Single") || title.includes("Simple")) return BedSingle;
@@ -164,9 +165,9 @@ const RoomsComponent = () => {
           <p className="text-[#5C2E0B] mb-4 text-sm md:text-base">
             {roomsContent.included_features}
           </p>
-          <button className="px-8 py-3 bg-transparent border-2 border-[#6B3410] text-[#6B3410] rounded-lg font-semibold hover:bg-[#6B3410] hover:text-white transition-all duration-300">
+          <Link src='/rooms' className="px-8 py-3 bg-transparent border-2 border-[#6B3410] text-[#6B3410] rounded-lg font-semibold hover:bg-[#6B3410] hover:text-white transition-all duration-300">
             {roomsContent.view_all_offers}
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>
