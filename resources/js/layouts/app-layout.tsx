@@ -1,3 +1,5 @@
+import FooterComponent from '@/components/footer/FooterComponent';
+import HeaderComponent from '@/components/header/HeaderComponent';
 import type { BreadcrumbItem } from '@/types';
 
 export default function AppLayout({
@@ -9,7 +11,15 @@ export default function AppLayout({
 }) {
     return (
         <section breadcrumbs={breadcrumbs}>
-            {children}
+            <main>
+            
+                <HeaderComponent />
+                
+                {children}
+
+                <FooterComponent />
+            
+            </main>
         </section>
     );
 }
