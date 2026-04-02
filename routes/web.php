@@ -11,6 +11,6 @@ Route::get('/decouvrir-tanger', function() {
     return inertia('DiscoverTangerPage');
 });
 
-Route::get('/chambres', function() {
-    return inertia('ChambresPage');
+Route::get('/rooms', function() {
+    return inertia('RoomsPage');
 });

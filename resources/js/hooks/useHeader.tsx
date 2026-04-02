@@ -31,7 +31,7 @@ export function useHeader() {
     },
     { 
       name: t.header?.navLinks?.rooms || (locale === 'fr' ? "Chambres" : "Rooms"), 
-      href: "/chambres", 
+      href: "/rooms", 
       key: "rooms" 
     },
     { 
