@@ -26,8 +26,7 @@ export function useHeader() {
 
   const languages = [
     { code: "fr", label: "Français", flag: "🇫🇷" },
-    { code: "en", label: "English", flag: "🇬🇧" },
-    { code: "ar", label: "العربية", flag: "🇲🇦" },
+    { code: "en", label: "English", flag: "🇬🇧" }
   ];
 
   const [currentLang, setCurrentLang] = useState(languages[0]);
