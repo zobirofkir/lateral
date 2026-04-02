@@ -24,6 +24,7 @@ const HeaderComponent = () => {
     linkVariants,
     dropdownVariants,
     mobileItemVariants,
+    changeLanguage
   } = useHeader();
 
   return (
@@ -50,6 +51,7 @@ const HeaderComponent = () => {
               currentLang={currentLang}
               setCurrentLang={setCurrentLang}
               dropdownVariants={dropdownVariants}
+              changeLanguage={changeLanguage}
           />
 
           <MobileMenuButtonComponent setIsOpen={setIsOpen} isOpen={isOpen} />

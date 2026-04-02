@@ -1,0 +1,14 @@
+{
+  "navLinks": {
+    "home": "Home",
+    "discover": "Discover Tangier",
+    "rooms": "Rooms",
+    "booking": "Booking",
+    "rules": "Hotel Rules"
+  },
+  "language": {
+    "english": "English",
+    "french": "French"
+  },
+  "menu": "Menu"
+}

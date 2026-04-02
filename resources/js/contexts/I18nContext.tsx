@@ -1,0 +1,131 @@
+import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+
+type Locale = 'en' | 'fr';
+
+interface I18nContextType {
+  locale: Locale;
+  setLocale: (locale: Locale) => void;
+  t: any;
+  dir: 'ltr' | 'rtl';
+  loading: boolean;
+}
+
+const I18nContext = createContext<I18nContextType | undefined>(undefined);
+
+const getInitialLocale = (): Locale => {
+  if (typeof window === 'undefined') return 'en';
+  const savedLocale = localStorage.getItem('locale') as Locale | null;
+  // إزالة 'ar' لأننا ندعم فقط 'en' و 'fr'
+  return savedLocale && (savedLocale === 'en' || savedLocale === 'fr') 
+    ? savedLocale 
+    : 'en';
+};
+
+// تصحيح أسماء الملفات لتتناسب مع هيكل مجلداتك
+const loadLocalTranslations = async (locale: Locale) => {
+  try {
+    // تصحيح: الملفات مسماة en-header.json و fr-header.json
+    const headerModule = await import(`../locales/${locale}/${locale}-header.json`);
+    
+    // هذه الملفات غير موجودة حالياً، سنتعامل معها بشكل آمن
+    let homeModule = {};
+    let footerModule = {};
+    
+    try {
+      homeModule = await import(`../locales/${locale}/${locale}-home.json`);
+    } catch (e) {
+      // الملف غير موجود، نستخدم كائن فارغ
+      console.log(`Home translations not found for ${locale}`);
+    }
+    
+    try {
+      footerModule = await import(`../locales/${locale}/${locale}-footer.json`);
+    } catch (e) {
+      // الملف غير موجود، نستخدم كائن فارغ
+      console.log(`Footer translations not found for ${locale}`);
+    }
+    
+    return {
+      header: headerModule.default,
+      home: homeModule,
+      footer: footerModule,
+    };
+  } catch (error) {
+    console.error(`Failed to load translations for ${locale}:`, error);
+    return {
+      header: {},
+      home: {},
+      footer: {},
+    };
+  }
+};
+
+export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const [locale, setLocaleState] = useState<Locale>(getInitialLocale);
+  const [translations, setTranslations] = useState<any>({});
+  const [loading, setLoading] = useState(true);
+
+  const fetchTranslations = async () => {
+    try {
+      setLoading(true);
+      
+      const enTranslations = await loadLocalTranslations('en');
+      const frTranslations = await loadLocalTranslations('fr');
+      
+      const formatted: any = {
+        en: enTranslations,
+        fr: frTranslations
+      };
+      
+      setTranslations(formatted);
+    } catch (error) {
+      console.error('Failed to load translations:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchTranslations();
+  }, []);
+
+  const setLocale = (newLocale: Locale) => {
+    setLocaleState(newLocale);
+    localStorage.setItem('locale', newLocale);
+    document.documentElement.lang = newLocale;
+    // إضافة دعم RTL (الفرنسية والإنجليزية LTR)
+    document.documentElement.dir = 'ltr';
+  };
+
+  useEffect(() => {
+    document.documentElement.lang = locale;
+    document.documentElement.dir = 'ltr'; // الفرنسية والإنجليزية LTR
+  }, [locale]);
+
+  // إضافة الدالة المفقودة dir
+  const value: I18nContextType = {
+    locale,
+    setLocale,
+    t: translations[locale] || { header: {}, home: {}, footer: {} },
+    dir: 'ltr', // كلتا اللغتين LTR
+    loading,
+  };
+
+  if (loading) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <div>Loading...</div>
+      </div>
+    );
+  }
+
+  return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
+};
+
+export const useI18n = (): I18nContextType => {
+  const context = useContext(I18nContext);
+  if (!context) {
+    throw new Error('useI18n must be used within I18nProvider');
+  }
+  return context;
+};

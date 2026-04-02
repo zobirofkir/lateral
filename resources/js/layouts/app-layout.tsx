@@ -1,5 +1,6 @@
 import FooterComponent from '@/components/footer/FooterComponent';
 import HeaderComponent from '@/components/header/HeaderComponent';
+import { I18nProvider } from '@/contexts/I18nContext';
 import type { BreadcrumbItem } from '@/types';
 
 export default function AppLayout({
@@ -10,16 +11,18 @@ export default function AppLayout({
     children: React.ReactNode;
 }) {
     return (
-        <section breadcrumbs={breadcrumbs}>
-            <main>
-            
-                <HeaderComponent />
+        <I18nProvider>
+            <section breadcrumbs={breadcrumbs}>
+                <main>
                 
-                {children}
+                    <HeaderComponent />
+                    
+                    {children}
 
-                <FooterComponent />
-            
-            </main>
-        </section>
+                    <FooterComponent />
+                
+                </main>
+            </section>
+        </I18nProvider>
     );
 }

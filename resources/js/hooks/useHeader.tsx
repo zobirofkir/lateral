@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import { useI18n } from "@/contexts/I18nContext";
 
 export function useHeader() {
   const [isOpen, setIsOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t, locale, setLocale, dir } = useI18n();
 
   /**
    * Handle scroll effect for header background
@@ -17,19 +19,44 @@ export function useHeader() {
   }, []);
 
   const navLinks = [
-    { name: "Accueil", href: "#" },
-    { name: "Découvrir Tanger", href: "#" },
-    { name: "Chambres", href: "#" },
-    { name: "Réservation", href: "#" },
-    { name: "Règlement de l'hôtel", href: "#" },
+    { 
+      name: t.header?.navLinks?.home || (locale === 'fr' ? "Accueil" : "Home"), 
+      href: "#", 
+      key: "home" 
+    },
+    { 
+      name: t.header?.navLinks?.discover || (locale === 'fr' ? "Découvrir Tanger" : "Discover Tangier"), 
+      href: "#", 
+      key: "discover" 
+    },
+    { 
+      name: t.header?.navLinks?.rooms || (locale === 'fr' ? "Chambres" : "Rooms"), 
+      href: "#", 
+      key: "rooms" 
+    },
+    { 
+      name: t.header?.navLinks?.booking || (locale === 'fr' ? "Réservation" : "Booking"), 
+      href: "#", 
+      key: "booking" 
+    },
+    { 
+      name: t.header?.navLinks?.rules || (locale === 'fr' ? "Règlement de l'hôtel" : "Hotel Rules"), 
+      href: "#", 
+      key: "rules" 
+    },
   ];
 
   const languages = [
-    { code: "fr", label: "Français", flag: "🇫🇷" },
-    { code: "en", label: "English", flag: "🇬🇧" }
+    { code: "fr", label: t.header?.language?.french || "Français", flag: "🇫🇷" },
+    { code: "en", label: t.header?.language?.english || "English", flag: "🇬🇧" }
   ];
 
-  const [currentLang, setCurrentLang] = useState(languages[0]);
+  const currentLang = languages.find(lang => lang.code === locale) || languages[0];
+
+  const changeLanguage = (langCode: 'en' | 'fr') => {
+    setLocale(langCode);
+    setLangOpen(false);
+  };
 
   /**
    * Animation variants
@@ -63,7 +90,6 @@ export function useHeader() {
     }),
   };
 
-
   return {
     isOpen,
     setIsOpen,
@@ -73,7 +99,9 @@ export function useHeader() {
     navLinks,
     languages,
     currentLang,
-    setCurrentLang,
+    changeLanguage,
+    dir,
+    locale,
     headerVariants,
     mobileMenuVariants,
     linkVariants,

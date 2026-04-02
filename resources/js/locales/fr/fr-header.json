@@ -1,0 +1,14 @@
+{
+  "navLinks": {
+    "home": "Accueil",
+    "discover": "Découvrir Tanger",
+    "rooms": "Chambres",
+    "booking": "Réservation",
+    "rules": "Règlement de l'hôtel"
+  },
+  "language": {
+    "english": "Anglais",
+    "french": "Français"
+  },
+  "menu": "Menu"
+}

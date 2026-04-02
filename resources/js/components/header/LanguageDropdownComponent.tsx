@@ -7,7 +7,7 @@ const LanguageDropdownComponent = ({
     setLangOpen,
     languages,
     currentLang,
-    setCurrentLang,
+    changeLanguage,
     dropdownVariants
 }) => {
   return (
@@ -41,7 +41,7 @@ const LanguageDropdownComponent = ({
                     <motion.button
                         key={lang.code}
                         onClick={() => {
-                          setCurrentLang(lang);
+                          changeLanguage(lang.code);  // تغيير هنا: استخدام changeLanguage مع الكود
                           setLangOpen(false);
                         }}
                         whileHover={{ x: 5, backgroundColor: "#FAF6F2" }}
