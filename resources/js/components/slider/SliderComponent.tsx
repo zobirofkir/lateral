@@ -40,7 +40,9 @@ const SliderComponent = () => {
             <LeftColumnComponent />
 
             {/* Right Column - Booking Form */}
-            <RightColumnComponent 
+            <div className='lg:block hidden' >
+
+              <RightColumnComponent 
                 handleBooking={handleBooking}
                 checkIn={checkIn}
                 setCheckIn={setCheckIn}
@@ -53,7 +55,9 @@ const SliderComponent = () => {
                 today={today}
                 defaultCheckIn={defaultCheckIn}
                 defaultCheckOut={defaultCheckOut}
-            />
+              />
+
+            </div>
           </div>
         </div>
       </div>
