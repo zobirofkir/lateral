@@ -6,6 +6,14 @@ import {
   Users,
   Coffee,
   ConciergeBell,
+  Snowflake,
+  Sparkles,
+  Shield,
+  Home,
+  Tv,
+  VolumeX,
+  Bus,
+  Bath,
 } from "lucide-react";
 import { useI18n } from '@/contexts/I18nContext';
 
@@ -29,12 +37,17 @@ const WhyComponent = () => {
   const whyContent = t.whyModule || {};
   
   const features = [
-    { icon: BedDouble, text: whyContent.features?.[0] },
-    { icon: ConciergeBell, text: whyContent.features?.[1] },
-    { icon: Wifi, text: whyContent.features?.[2] },
-    { icon: Users, text: whyContent.features?.[3] },
-    { icon: Car, text: whyContent.features?.[4] },
-    { icon: Coffee, text: whyContent.features?.[5] },
+    { icon: Snowflake, text: whyContent.features?.[0] },      
+    { icon: Wifi, text: whyContent.features?.[1] },           
+    { icon: Car, text: whyContent.features?.[2] },            
+    { icon: Sparkles, text: whyContent.features?.[3] },       
+    { icon: Shield, text: whyContent.features?.[4] },         
+    { icon: Home, text: whyContent.features?.[5] },           
+    { icon: Tv, text: whyContent.features?.[6] },             
+    { icon: BedDouble, text: whyContent.features?.[7] },      
+    { icon: VolumeX, text: whyContent.features?.[8] },        
+    { icon: Bus, text: whyContent.features?.[9] },            
+    { icon: Bath, text: whyContent.features?.[10] },          
   ];
 
   return (
