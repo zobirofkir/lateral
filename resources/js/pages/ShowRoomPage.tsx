@@ -15,6 +15,7 @@ import ShowRoomHeroSectionComponent from '@/components/rooms/show/ShowRoomHeroSe
 import ShowRoomLeftColumnComponent from '@/components/rooms/show/ShowRoomLeftColumnComponent';
 import ShowRoomRightColumnComponent from '@/components/rooms/show/ShowRoomRightColumnComponent';
 import ShowRoomIncludedFeatures from '@/components/rooms/show/ShowRoomIncludedFeatures';
+import ShowRoomCtaComponent from '@/components/rooms/show/ShowRoomCtaComponent';
 
 const ShowRoomPage = () => {
 
@@ -66,7 +67,7 @@ const ShowRoomPage = () => {
         <ShowRoomIncludedFeatures roomsContent={roomsContent} />
         
         {/* CTA Section */}
-        
+        <ShowRoomCtaComponent />
       </div>
     </div>
   );
