@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "badge": "Nos Politiques",
+    "title": "Règles et Directives",
+    "description": "Nous nous efforçons d'offrir la meilleure expérience à tous nos clients. Veuillez consulter nos politiques pour garantir une visite agréable et sans encombre.",
+    "buttons": {
+      "book": "Prendre RDV",
+      "contact": "Nous Contacter"
+    }
+  },
+  "rulesSection": {
+    "badge": "Pourquoi Nous Choisir",
+    "title": "Notre Engagement d'Excellence",
+    "subtitle": "Pour fournir un service de la plus haute qualité, nous demandons à tous nos clients de suivre ces directives simples"
+  },
+  "rules": [
+    {
+      "title": "Heure d'Arrivée",
+      "description": "Veuillez arriver 5 à 10 minutes avant votre rendez-vous programmé pour vous enregistrer et préparer votre service.",
+      "details": "Les arrivées tardives peuvent entraîner une durée de service réduite ou un report pour ne pas impacter les autres clients."
+    },
+    {
+      "title": "Politique d'Annulation",
+      "description": "Annulez ou reportez au moins 24 heures avant votre rendez-vous pour éviter des frais.",
+      "details": "Les annulations tardives ou les absences peuvent entraîner des frais de 50% du prix du service."
+    },
+    {
+      "title": "Politique Enfants",
+      "description": "Les enfants de moins de 12 ans doivent être accompagnés d'un adulte en tout temps.",
+      "details": "Pour des raisons de sécurité, les enfants non accompagnés ne seront pas autorisés dans la zone de service."
+    },
+    {
+      "title": "Santé et Sécurité",
+      "description": "Tous les outils sont stérilisés et des serviettes fraîches sont utilisées pour chaque client.",
+      "details": "Si vous ne vous sentez pas bien, veuillez reporter votre rendez-vous pour la sécurité de notre personnel et de nos clients."
+    },
+    {
+      "title": "Garantie de Service",
+      "description": "Pas satisfait de votre coupe ? Nous offrons des ajustements gratuits dans les 3 jours.",
+      "details": "Les ajustements doivent être demandés dans les 3 jours suivant la date de votre service d'origine."
+    },
+    {
+      "title": "Moyens de Paiement",
+      "description": "Nous acceptons toutes les principales cartes de crédit, les espèces et les paiements numériques.",
+      "details": "Une carte de crédit valide est requise pour confirmer tous les rendez-vous."
+    }
+  ],
+  "detailedPolicies": {
+    "booking": {
+      "title": "Politique de Réservation",
+      "items": [
+        "Réservation en ligne disponible 24h/24 et 7j/7 pour votre confort",
+        "Carte de crédit requise pour sécuriser tous les rendez-vous",
+        "Réservations le jour même acceptées selon disponibilité",
+        "Frais d'absence ou d'annulation tardive : 50% du prix du service"
+      ]
+    },
+    "service": {
+      "title": "Directives de Service",
+      "items": [
+        "Consultation incluse avant chaque service",
+        "Ajustements gratuits dans les 3 jours suivant le service",
+        "Protocoles d'hygiène et d'assainissement strictement suivis",
+        "Satisfaction à 100% garantie sur tous les services"
+      ]
+    }
+  },
+  "faqSection": {
+    "badge": "Base de Connaissances",
+    "title": "Foire Aux Questions",
+    "subtitle": "Trouvez des réponses aux questions courantes sur nos politiques et services"
+  },
+  "faqs": [
+    {
+      "question": "Comment puis-je prendre rendez-vous ?",
+      "answer": "Vous pouvez réserver en ligne sur notre site web, nous appeler directement, ou visiter notre salon en personne. La réservation en ligne est disponible 24h/24 et 7j/7."
+    },
+    {
+      "question": "Que faire si j'ai besoin de reporter mon rendez-vous ?",
+      "answer": "Vous pouvez reporter en ligne jusqu'à 24 heures avant votre rendez-vous. Pour les changements de dernière minute, veuillez nous appeler directement."
+    },
+    {
+      "question": "Proposez-vous des réservations de groupe ?",
+      "answer": "Oui ! Nous acceptons les réservations de groupe pour les groupes de 4 personnes ou plus. Veuillez nous appeler à l'avance pour organiser des aménagements spéciaux."
+    },
+    {
+      "question": "Les clients sans rendez-vous sont-ils les bienvenus ?",
+      "answer": "Les clients sans rendez-vous sont les bienvenus selon disponibilité, mais nous recommandons fortement de réserver à l'avance pour garantir votre créneau horaire préféré."
+    },
+    {
+      "question": "Quelle est votre politique de remboursement ?",
+      "answer": "Nous n'offrons pas de remboursements mais fournissons des ajustements gratuits dans les 3 jours si vous n'êtes pas satisfait de votre service."
+    },
+    {
+      "question": "Avez-vous des cartes cadeaux ?",
+      "answer": "Oui, nous proposons des cartes cadeaux numériques et physiques de n'importe quelle valeur. Parfaites pour les fêtes et les occasions spéciales !"
+    }
+  ],
+  "importantNotice": {
+    "title": "Avis Important",
+    "content": "Les politiques sont sujettes à modification sans préavis. Veuillez consulter périodiquement nos règles pour les mises à jour.",
+    "lastUpdated": "Dernière mise à jour : 1er décembre 2024"
+  },
+  "contactSection": {
+    "title": "Vous avez encore des questions ?",
+    "subtitle": "Notre équipe est là pour vous aider avec toutes vos questions concernant nos politiques ou services",
+    "phone": "Appelez-nous",
+    "email": "E-mail",
+    "visit": "Visitez-nous",
+    "phoneNumber": "(555) 123-4567",
+    "emailAddress": "info@barbershop.com",
+    "address": "123 Rue Principale, Ville, État"
+  }
+}

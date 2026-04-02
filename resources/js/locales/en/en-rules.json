@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "badge": "Our Policies",
+    "title": "Rules & Guidelines",
+    "description": "We strive to provide the best experience for all our clients. Please review our policies to ensure a smooth and enjoyable visit.",
+    "buttons": {
+      "book": "Book Appointment",
+      "contact": "Contact Us"
+    }
+  },
+  "rulesSection": {
+    "badge": "Why Choose Us",
+    "title": "Our Commitment to Excellence",
+    "subtitle": "To provide the highest quality service, we ask all clients to follow these simple guidelines"
+  },
+  "rules": [
+    {
+      "title": "Arrival Time",
+      "description": "Please arrive 5-10 minutes before your scheduled appointment to check-in and prepare for your service.",
+      "details": "Late arrivals may result in shortened service time or rescheduling to avoid impacting other clients."
+    },
+    {
+      "title": "Cancellation Policy",
+      "description": "Cancel or reschedule at least 24 hours before your appointment to avoid charges.",
+      "details": "Late cancellations or no-shows may incur a fee of 50% of the service price."
+    },
+    {
+      "title": "Children Policy",
+      "description": "Children under 12 must be accompanied by an adult at all times.",
+      "details": "For safety reasons, unsupervised children will not be permitted in the service area."
+    },
+    {
+      "title": "Health & Safety",
+      "description": "All tools are sterilized, and fresh towels are used for each client.",
+      "details": "If you're feeling unwell, please reschedule your appointment for the safety of our staff and clients."
+    },
+    {
+      "title": "Service Guarantee",
+      "description": "Not satisfied with your cut? We offer complimentary adjustments within 3 days.",
+      "details": "Adjustments must be requested within 3 days of your original service date."
+    },
+    {
+      "title": "Payment Methods",
+      "description": "We accept all major credit cards, cash, and digital payments.",
+      "details": "A valid credit card is required to hold all appointments."
+    }
+  ],
+  "detailedPolicies": {
+    "booking": {
+      "title": "Booking Policy",
+      "items": [
+        "Online booking available 24/7 for your convenience",
+        "Credit card required to secure all appointments",
+        "Same-day bookings accepted based on availability",
+        "No-show or late cancellation fee: 50% of service price"
+      ]
+    },
+    "service": {
+      "title": "Service Guidelines",
+      "items": [
+        "Consultation included before every service",
+        "Free adjustments within 3 days of service",
+        "Hygiene and sanitation protocols strictly followed",
+        "100% satisfaction guaranteed on all services"
+      ]
+    }
+  },
+  "faqSection": {
+    "badge": "Knowledge Base",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our policies and services"
+  },
+  "faqs": [
+    {
+      "question": "How do I book an appointment?",
+      "answer": "You can book online through our website, call us directly, or visit our shop in person. Online booking is available 24/7."
+    },
+    {
+      "question": "What if I need to reschedule?",
+      "answer": "You can reschedule online up to 24 hours before your appointment. For last-minute changes, please call us directly."
+    },
+    {
+      "question": "Do you offer group bookings?",
+      "answer": "Yes! We accommodate group bookings for parties of 4 or more. Please call ahead to arrange special accommodations."
+    },
+    {
+      "question": "Are walk-ins welcome?",
+      "answer": "Walk-ins are welcome based on availability, but we strongly recommend booking in advance to secure your preferred time."
+    },
+    {
+      "question": "What's your refund policy?",
+      "answer": "We don't offer refunds but provide free adjustments within 3 days if you're not satisfied with your service."
+    },
+    {
+      "question": "Do you have gift cards?",
+      "answer": "Yes, we offer digital and physical gift cards in any denomination. Perfect for holidays and special occasions!"
+    }
+  ],
+  "importantNotice": {
+    "title": "Important Notice",
+    "content": "Policies are subject to change without prior notice. Please review our rules periodically for updates.",
+    "lastUpdated": "Last updated: December 1, 2024"
+  },
+  "contactSection": {
+    "title": "Still Have Questions?",
+    "subtitle": "Our team is here to help you with any questions about our policies or services",
+    "phone": "Call Us",
+    "email": "Email",
+    "visit": "Visit Us",
+    "phoneNumber": "(555) 123-4567",
+    "emailAddress": "info@barbershop.com",
+    "address": "123 Main St, City, State"
+  }
+}
