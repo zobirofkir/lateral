@@ -25,6 +25,8 @@ import {
 } from 'lucide-react';
 import { useI18n } from '@/contexts/I18nContext';
 import { Link } from '@inertiajs/react';
+import RulesHeroSectionComponent from '@/components/rules/RulesHeroSectionComponent';
+import RulesGridComponent from '@/components/rules/RulesGridComponent';
 
 const RulesPage = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -139,77 +141,16 @@ const RulesPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - Brown Theme */}
-      <div className="relative bg-gradient-to-r from-[#2C1810] via-[#3E2723] to-[#2C1810] text-white overflow-hidden">
-        {/* Subtle pattern overlay */}
-        <div className="absolute inset-0 opacity-10" 
-             style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23FFFFFF" fill-opacity="0.4"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }}></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-2 text-amber-200 mb-4">
-              <Shield className="w-6 h-6" />
-              <span className="text-sm font-semibold uppercase tracking-wider">
-                {rulesModule.hero.badge}
-              </span>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-              {rulesModule.hero.title}
-            </h1>
-            <p className="text-lg md:text-xl text-amber-100/90 mb-8 leading-relaxed">
-              {rulesModule.hero.description}
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link href={'/bookings'} className="bg-[#C68B5E] hover:bg-[#B07A4F] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-                {rulesModule.hero.buttons.book}
-              </Link>
-              <Link href={'/contacts'} className="border border-amber-300/50 hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition-all duration-300 backdrop-blur-sm">
-                {rulesModule.hero.buttons.contact}
-              </Link>
-            </div>
-          </div>
-        </div>
-        {/* Smooth bottom transition */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#FDF8F5] to-transparent"></div>
-      </div>
+      <RulesHeroSectionComponent rulesModule={rulesModule} />
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         {/* Rules Grid */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-[#E6D5C3] px-4 py-1 rounded-full mb-4">
-              <Star className="w-4 h-4 text-[#5C3A21]" />
-              <span className="text-sm font-medium text-[#5C3A21]">{rulesModule.rulesSection.badge}</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2C1810] mb-4">
-              {rulesModule.rulesSection.title}
-            </h2>
-            <p className="text-lg text-[#5C3A21] max-w-2xl mx-auto">
-              {rulesModule.rulesSection.subtitle}
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {rules.map((rule, index) => {
-              const Icon = rule.icon;
-              const styles = getTypeStyles(rule.type);
-              return (
-                <div
-                  key={index}
-                  className={`${styles.bg} border ${styles.border} rounded-2xl p-6 transition-all duration-300 ${styles.hoverBg} hover:shadow-xl hover:-translate-y-1 group`}
-                >
-                  <div className={`${styles.iconBg} w-14 h-14 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className={`w-7 h-7 ${styles.iconColor}`} />
-                  </div>
-                  <h3 className={`text-xl font-bold mb-2 ${styles.text}`}>
-                    {rule.title}
-                  </h3>
-                  <p className="text-[#5C3A21] mb-3 leading-relaxed">{rule.description}</p>
-                  <p className="text-sm text-[#8B6B4A] border-t border-[#E6D5C3] pt-3 mt-2">{rule.details}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        <RulesGridComponent 
+            rulesModule={rulesModule}
+            rules={rules}
+            getTypeStyles={getTypeStyles}
+        />
 
         {/* Detailed Policies Section - Brown Theme */}
         <div className="mb-20 rounded-3xl overflow-hidden shadow-2xl">
