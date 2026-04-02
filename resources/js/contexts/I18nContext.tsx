@@ -32,6 +32,7 @@ const loadLocalTranslations = async (locale: Locale) => {
     const whyModule = await import(`../locales/${locale}/${locale}-why.json`);
     const roomsModule = await import(`../locales/${locale}/${locale}-rooms.json`);
     const discoverModule = await import(`../locales/${locale}/${locale}-discover.json`);
+    const rulesModule = await import(`../locales/${locale}/${locale}-rules.json`);
 
     return {
       header: headerModule.default,
@@ -42,7 +43,7 @@ const loadLocalTranslations = async (locale: Locale) => {
       whyModule: whyModule.default,
       roomsModule: roomsModule.default,
       discoverModule: discoverModule.default,
-      
+      rulesModule: rulesModule.default,
     };
   } catch (error) {
     console.error(`Failed to load translations for ${locale}:`, error);

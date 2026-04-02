@@ -23,51 +23,56 @@ import {
   Star,
   HeartHandshake,
 } from 'lucide-react';
+import { useI18n } from '@/contexts/I18nContext';
+import { Link } from '@inertiajs/react';
 
 const RulesPage = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const { t } = useI18n();    
+  const rulesModule = t.rulesModule || {};
+
 
   const rules = [
     {
       icon: Clock,
-      title: "Arrival Time",
-      description: "Please arrive 5-10 minutes before your scheduled appointment to check-in and prepare for your service.",
-      details: "Late arrivals may result in shortened service time or rescheduling to avoid impacting other clients.",
+      title: rulesModule.rules[0].title,
+      description: rulesModule.rules[0].description,
+      details: rulesModule.rules[0].details,
       type: "info",
     },
     {
       icon: CreditCard,
-      title: "Cancellation Policy",
-      description: "Cancel or reschedule at least 24 hours before your appointment to avoid charges.",
-      details: "Late cancellations or no-shows may incur a fee of 50% of the service price.",
+      title: rulesModule.rules[1].title,
+      description: rulesModule.rules[1].description,
+      details: rulesModule.rules[1].details,
       type: "warning",
     },
     {
       icon: Users,
-      title: "Children Policy",
-      description: "Children under 12 must be accompanied by an adult at all times.",
-      details: "For safety reasons, unsupervised children will not be permitted in the service area.",
+      title: rulesModule.rules[2].title,
+      description: rulesModule.rules[2].description,
+      details: rulesModule.rules[2].details,
       type: "info",
     },
     {
       icon: Shield,
-      title: "Health & Safety",
-      description: "All tools are sterilized, and fresh towels are used for each client.",
-      details: "If you're feeling unwell, please reschedule your appointment for the safety of our staff and clients.",
+      title: rulesModule.rules[3].title,
+      description: rulesModule.rules[3].description,
+      details: rulesModule.rules[3].details,
       type: "success",
     },
     {
       icon: Scissors,
-      title: "Service Guarantee",
-      description: "Not satisfied with your cut? We offer complimentary adjustments within 3 days.",
-      details: "Adjustments must be requested within 3 days of your original service date.",
+      title: rulesModule.rules[4].title,
+      description: rulesModule.rules[4].description,
+      details: rulesModule.rules[4].details,
       type: "success",
     },
     {
       icon: AlertTriangle,
-      title: "Payment Methods",
-      description: "We accept all major credit cards, cash, and digital payments.",
-      details: "A valid credit card is required to hold all appointments.",
+      title: rulesModule.rules[5].title,
+      description: rulesModule.rules[5].description,
+      details: rulesModule.rules[5].details,
       type: "info",
     },
   ];
@@ -142,21 +147,23 @@ const RulesPage = () => {
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 text-amber-200 mb-4">
               <Shield className="w-6 h-6" />
-              <span className="text-sm font-semibold uppercase tracking-wider">Our Policies</span>
+              <span className="text-sm font-semibold uppercase tracking-wider">
+                {rulesModule.hero.badge}
+              </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-              Rules & Guidelines
+              {rulesModule.hero.title}
             </h1>
             <p className="text-lg md:text-xl text-amber-100/90 mb-8 leading-relaxed">
-              We strive to provide the best experience for all our clients. Please review our policies to ensure a smooth and enjoyable visit.
+              {rulesModule.hero.description}
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-[#C68B5E] hover:bg-[#B07A4F] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-                Book Appointment
-              </button>
-              <button className="border border-amber-300/50 hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition-all duration-300 backdrop-blur-sm">
-                Contact Us
-              </button>
+              <Link href={'/bookings'} className="bg-[#C68B5E] hover:bg-[#B07A4F] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                {rulesModule.hero.buttons.book}
+              </Link>
+              <Link href={'/contacts'} className="border border-amber-300/50 hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition-all duration-300 backdrop-blur-sm">
+                {rulesModule.hero.buttons.contact}
+              </Link>
             </div>
           </div>
         </div>
@@ -171,13 +178,13 @@ const RulesPage = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-[#E6D5C3] px-4 py-1 rounded-full mb-4">
               <Star className="w-4 h-4 text-[#5C3A21]" />
-              <span className="text-sm font-medium text-[#5C3A21]">Why Choose Us</span>
+              <span className="text-sm font-medium text-[#5C3A21]">{rulesModule.rulesSection.badge}</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#2C1810] mb-4">
-              Our Commitment to Excellence
+              {rulesModule.rulesSection.title}
             </h2>
             <p className="text-lg text-[#5C3A21] max-w-2xl mx-auto">
-              To provide the highest quality service, we ask all clients to follow these simple guidelines
+              {rulesModule.rulesSection.subtitle}
             </p>
           </div>
 
