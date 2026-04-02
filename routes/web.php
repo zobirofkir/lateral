@@ -25,6 +25,13 @@ Route::get('/rooms', function() {
 });
 
 /**
+ * Show Single Home
+ */
+Route::get('/rooms/{id}', function() {
+    return inertia('ShowRoomPage');
+});
+
+/**
  * Bookings page
  */
 Route::get('/bookings', function() {
