@@ -31,10 +31,10 @@ const HeaderComponent = () => {
       initial="initial"
       animate="animate"
       variants={headerVariants}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`block top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-transparent backdrop-blur-md shadow-lg"
-          : "bg-transparent shadow-sm"
+          ? "bg-white backdrop-blur-md shadow-lg"
+          : "bg-white shadow-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
