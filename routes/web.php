@@ -27,8 +27,10 @@ Route::get('/rooms', function() {
 /**
  * Show Single Home
  */
-Route::get('/rooms/{id}', function() {
-    return inertia('ShowRoomPage');
+Route::get('/rooms/{id}', function($id) {
+    return inertia('ShowRoomPage', [
+        'roomId' => $id
+    ]);
 });
 
 /**
