@@ -1,3 +1,4 @@
+import LoadingComponent from '@/components/loading/LoadingComponent';
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 type Locale = 'en' | 'fr';
@@ -107,9 +108,7 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   if (loading) {
     return (
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-        <div>Loading...</div>
-      </div>
+      <LoadingComponent />
     );
   }
 
