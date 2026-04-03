@@ -27,6 +27,8 @@ import {
   Utensils,
 } from 'lucide-react';
 import { Link } from '@inertiajs/react';
+import { useI18n } from '@/contexts/I18nContext';
+import ContactHeroSectionComponent from '@/components/contacts/ContactHeroSectionComponent';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -45,14 +47,17 @@ const ContactPage = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const { t } = useI18n();    
+  const contactModule = t.contactModule || {};
+
   const inquiryTypes = [
-    'Select an inquiry type',
-    'Booking & Availability',
-    'Pricing & Offers',
-    'Corporate Stay',
-    'Long-term Residence',
-    'Special Requests',
-    'General Information',
+    contactModule.page.contactForm.fields.inquiryType.options[0],
+    contactModule.page.contactForm.fields.inquiryType.options[1],
+    contactModule.page.contactForm.fields.inquiryType.options[2],
+    contactModule.page.contactForm.fields.inquiryType.options[3],
+    contactModule.page.contactForm.fields.inquiryType.options[4],
+    contactModule.page.contactForm.fields.inquiryType.options[5],
+    contactModule.page.contactForm.fields.inquiryType.options[6],
   ];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -67,12 +72,11 @@ const ContactPage = () => {
     setIsSubmitting(true);
     setFormStatus({ type: null, message: '' });
 
-    // Simulate API call
     setTimeout(() => {
       if (formData.name && formData.email && formData.message) {
         setFormStatus({
           type: 'success',
-          message: 'Request sent successfully! Our concierge team will respond within 24 hours.',
+          message: contactModule.page.contactForm.successMessage,
         });
         setFormData({
           name: '',
@@ -94,83 +98,27 @@ const ContactPage = () => {
     }, 1500);
   };
 
-  const contactInfo = [
-    {
-      icon: MapPin,
-      title: 'Visit Us',
-      details: ['LA TERAL Residence', 'Route de Malabata', 'Tangier, Morocco'],
-      action: 'Get Directions',
-      link: 'https://maps.google.com',
-      color: 'bg-red-500',
-    },
-    {
-      icon: Phone,
-      title: 'Call Us',
-      details: ['Reservations: +212 539 123 456', 'Concierge: +212 639 123 456'],
-      action: 'Call Now',
-      link: 'tel:+212539123456',
-      color: 'bg-green-500',
-    },
-    {
-      icon: Mail,
-      title: 'Email Us',
-      details: ['reservations@lateral.ma', 'concierge@lateral.ma'],
-      action: 'Send Email',
-      link: 'mailto:reservations@lateral.ma',
-      color: 'bg-blue-500',
-    },
-    {
-      icon: Clock,
-      title: 'Concierge Service',
-      details: [
-        'Monday - Friday: 8AM - 10PM',
-        'Saturday - Sunday: 9AM - 9PM',
-        '24/7 Emergency Support',
-      ],
-      action: 'Book a Tour',
-      link: '/bookings',
-      color: 'bg-purple-500',
-    },
-  ];
 
   const stats = [
-    { icon: Home, value: '24', label: 'Exclusive Suites', color: 'text-blue-600' },
-    { icon: Star, value: '5★', label: 'Luxury Rating', color: 'text-yellow-600' },
-    { icon: Waves, value: 'Sea View', label: 'Panoramic', color: 'text-cyan-600' },
-    { icon: Mountain, value: 'Mountain', label: 'View Available', color: 'text-emerald-600' },
+    { icon: Home, value: '24', label: contactModule.page.stats[0].label, color: 'text-blue-600' },
+    { icon: Star, value: '5★', label: contactModule.page.stats[1].label, color: 'text-yellow-600' },
+    { icon: Waves, value: contactModule.page.stats[2].value, label: contactModule.page.stats[2].label, color: 'text-cyan-600' },
+    { icon: Mountain, value: contactModule.page.stats[3].value, label: contactModule.page.stats[3].label, color: 'text-emerald-600' },
   ];
 
   const amenities = [
-    { icon: Wifi, label: 'High-Speed WiFi' },
-    { icon: Car, label: 'Private Parking' },
-    { icon: Utensils, label: 'Room Service' },
-    { icon: Coffee, label: 'Welcome Amenities' },
+    { icon: Wifi, label: contactModule.page.amenities[0].label },
+    { icon: Car, label: contactModule.page.amenities[1].label },
+    { icon: Utensils, label: contactModule.page.amenities[2].label },
+    { icon: Coffee, label: contactModule.page.amenities[3].label },
   ];
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-40"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&h=400&fit=crop')] bg-cover bg-center opacity-20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            </h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-              LA TERAL offers an exclusive collection of high-standing apartments, combining the independence of a private residence with the refinement of the most prestigious hotel services.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link href={'/bookings'} className="bg-amber-600 hover:bg-amber-700 px-6 py-3 rounded-lg font-semibold transition-colors">
-                Check Availability
-              </Link>
-              <Link href={'/virtual-tour'} className="bg-white/10 hover:bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg font-semibold transition-colors">
-                Virtual Tour
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ContactHeroSectionComponent contactModule={contactModule} />
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
@@ -181,10 +129,10 @@ const ContactPage = () => {
           <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
             <div className="mb-6">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Reserve Your Stay
+                {contactModule.page.contactForm.title}
               </h2>
               <p className="text-gray-600">
-                Experience excellence and absolute serenity. Our concierge team is at your service.
+                {contactModule.page.contactForm.subtitle}
               </p>
             </div>
 
@@ -209,7 +157,7 @@ const ContactPage = () => {
               <div className="grid md:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Full Name *
+                    {contactModule.page.contactForm.fields.fullName.label}
                   </label>
                   <div className="relative">
                     <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -226,7 +174,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Email Address *
+                    {contactModule.page.contactForm.fields.email.label}
                   </label>
                   <div className="relative">
                     <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -246,7 +194,7 @@ const ContactPage = () => {
               <div className="grid md:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Phone Number
+                    {contactModule.page.contactForm.fields.phone.label}
                   </label>
                   <div className="relative">
                     <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -262,7 +210,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Inquiry Type *
+                    {contactModule.page.contactForm.fields.inquiryType.label}
                   </label>
                   <div className="relative">
                     <MessageCircle className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -286,7 +234,7 @@ const ContactPage = () => {
               <div className="grid md:grid-cols-3 gap-5">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Check-in
+                    {contactModule.page.contactForm.fields.checkIn.label}
                   </label>
                   <div className="relative">
                     <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -301,7 +249,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Check-out
+                    {contactModule.page.contactForm.fields.checkOut.label}
                   </label>
                   <div className="relative">
                     <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -316,7 +264,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Guests
+                    {contactModule.page.contactForm.fields.guests.label}
                   </label>
                   <div className="relative">
                     <Users className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -337,7 +285,7 @@ const ContactPage = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Your Message / Special Requests *
+                  {contactModule.page.contactForm.fields.message.label}
                 </label>
                 <div className="relative">
                   <MessageCircle className="absolute left-3 top-3 text-gray-400 w-5 h-5" />
@@ -361,12 +309,12 @@ const ContactPage = () => {
                 {isSubmitting ? (
                   <>
                     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                    Sending Request...
+                    {contactModule.page.contactForm.submitButton.loadingText}
                   </>
                 ) : (
                   <>
                     <Send className="w-5 h-5" />
-                    Send Inquiry
+                    {contactModule.page.contactForm.submitButton.text}
                   </>
                 )}
               </button>
@@ -378,12 +326,14 @@ const ContactPage = () => {
             {/* Google Maps Embed */}
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
               <div className="p-6 pb-0">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Find Us Here</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {contactModule.page.map.title}
+                </h3>
                 <p className="text-gray-600 text-sm mb-2">
-                  Route de Malabata, Tangier, Morocco
+                  {contactModule.page.map.address}
                 </p>
                 <p className="text-gray-500 text-xs mb-4">
-                  Immediate proximity to Malabata Beach and Villa Harris Park, steps away from the city's best restaurants and shopping centers.
+                  {contactModule.page.map.description}
                 </p>
               </div>
               <div className="h-64 md:h-72 w-full">
@@ -413,7 +363,7 @@ const ContactPage = () => {
               </div>
               <div className="border-t border-amber-200 pt-4">
                 <p className="text-sm text-gray-700 text-center italic">
-                  "A unique experience enhanced by a spectacular panoramic view between sea and mountains"
+                  {contactModule.page.testimonial.text}
                 </p>
                 <div className="flex flex-wrap justify-center gap-4 mt-4">
                   {amenities.map((amenity, idx) => (
