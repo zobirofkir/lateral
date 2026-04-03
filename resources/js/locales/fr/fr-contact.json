@@ -1,0 +1,181 @@
+{
+  "page": {
+    "title": "Contact & Réservations - Résidence LA TERAL",
+    "description": "Vivez l'expérience d'une résidence de luxe à Tanger, Maroc. Contactez notre équipe de conciergerie pour les réservations, demandes et requêtes spéciales.",
+    "hero": {
+      "title": "Résidence LA TERAL",
+      "subtitle": "Appartements de Haut Standing avec Services Hôteliers Prestigieux",
+      "description": "LA TERAL propose une collection exclusive d'appartements de haut standing, alliant l'indépendance d'une résidence privée au raffinement des services hôteliers les plus prestigieux.",
+      "ctaButtons": [
+        {
+          "text": "Vérifier la Disponibilité",
+          "link": "/bookings",
+          "type": "primary"
+        },
+        {
+          "text": "Visite Virtuelle",
+          "link": "/virtual-tour",
+          "type": "secondary"
+        }
+      ]
+    },
+    "contactForm": {
+      "title": "Réservez Votre Séjour",
+      "subtitle": "Vivez l'excellence et la sérénité absolue. Notre équipe de conciergerie est à votre service.",
+      "successMessage": "Demande envoyée avec succès ! Notre équipe de conciergerie vous répondra sous 24 heures.",
+      "fields": {
+        "fullName": {
+          "label": "Nom Complet",
+          "placeholder": "Jean Dupont",
+          "required": true,
+          "type": "text"
+        },
+        "email": {
+          "label": "Adresse Email",
+          "placeholder": "jean@exemple.com",
+          "required": true,
+          "type": "email"
+        },
+        "phone": {
+          "label": "Numéro de Téléphone",
+          "placeholder": "+212 6XX XXX XXX",
+          "required": false,
+          "type": "tel"
+        },
+        "inquiryType": {
+          "label": "Type de Demande",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Sélectionnez un type de demande",
+            "Réservation & Disponibilité",
+            "Tarifs & Offres",
+            "Séjour d'Affaires",
+            "Résidence Longue Durée",
+            "Demandes Spéciales",
+            "Informations Générales"
+          ]
+        },
+        "checkIn": {
+          "label": "Date d'Arrivée",
+          "required": false,
+          "type": "date"
+        },
+        "checkOut": {
+          "label": "Date de Départ",
+          "required": false,
+          "type": "date"
+        },
+        "guests": {
+          "label": "Nombre de Voyageurs",
+          "required": false,
+          "type": "select",
+          "options": [1, 2, 3, 4, 5, 6],
+          "unitSingular": "Voyageur",
+          "unitPlural": "Voyageurs"
+        },
+        "message": {
+          "label": "Votre Message / Demandes Spéciales",
+          "placeholder": "Parlez-nous de vos préférences de séjour, occasions spéciales ou toutes demandes...",
+          "required": true,
+          "type": "textarea",
+          "rows": 4
+        }
+      },
+      "submitButton": {
+        "text": "Envoyer la Demande",
+        "loadingText": "Envoi en cours..."
+      }
+    },
+    "contactInfo": [
+      {
+        "icon": "MapPin",
+        "title": "Nous Visiter",
+        "details": [
+          "Résidence LA TERAL",
+          "Route de Malabata",
+          "Tanger, Maroc"
+        ],
+        "action": "Obtenir l'Itinéraire",
+        "link": "https://maps.google.com",
+        "color": "red"
+      },
+      {
+        "icon": "Phone",
+        "title": "Nous Appeler",
+        "details": [
+          "Réservations : +212 539 123 456",
+          "Conciergerie : +212 639 123 456"
+        ],
+        "action": "Appeler Maintenant",
+        "link": "tel:+212539123456",
+        "color": "green"
+      },
+      {
+        "icon": "Mail",
+        "title": "Nous Écrire",
+        "details": [
+          "reservations@lateral.ma",
+          "concierge@lateral.ma"
+        ],
+        "action": "Envoyer un Email",
+        "link": "mailto:reservations@lateral.ma",
+        "color": "blue"
+      },
+      {
+        "icon": "Clock",
+        "title": "Service de Conciergerie",
+        "details": [
+          "Lundi - Vendredi : 8h - 22h",
+          "Samedi - Dimanche : 9h - 21h",
+          "Support d'Urgence 24/7"
+        ],
+        "action": "Réserver une Visite",
+        "link": "/bookings",
+        "color": "purple"
+      }
+    ],
+    "map": {
+      "title": "Où Nous Trouver",
+      "address": "Route de Malabata, Tanger, Maroc",
+      "description": "Proximité immédiate de la Plage Malabata et du Parc Villa Harris, à quelques pas des meilleurs restaurants et centres commerciaux de la ville.",
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.123456789012!2d-5.812345678901234!3d35.7890123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b8b123456789%3A0x123456789abcdef!2sRoute%20de%20Malabata%2C%20Tanger%2C%20Morocco!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
+    },
+    "stats": [
+      {
+        "icon": "Home",
+        "value": "24",
+        "label": "Suites Exclusives",
+        "color": "blue"
+      },
+      {
+        "icon": "Star",
+        "value": "5★",
+        "label": "Classement Luxe",
+        "color": "yellow"
+      },
+      {
+        "icon": "Waves",
+        "value": "Vue Mer",
+        "label": "Panoramique",
+        "color": "cyan"
+      },
+      {
+        "icon": "Mountain",
+        "value": "Montagne",
+        "label": "Vue Disponible",
+        "color": "emerald"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "label": "WiFi Haut Débit" },
+      { "icon": "Car", "label": "Parking Privé" },
+      { "icon": "Utensils", "label": "Service en Chambre" },
+      { "icon": "Coffee", "label": "Services d'Accueil" }
+    ],
+    "testimonial": {
+      "text": "\"Une expérience unique rehaussée par une vue panoramique spectaculaire entre mer et montagnes\"",
+      "author": "Avis Client"
+    }
+  }
+}

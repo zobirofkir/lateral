@@ -1,0 +1,179 @@
+{
+  "page": {
+    "title": "Contact & Reservations - LA TERAL Residence",
+    "description": "Experience luxury residence living in Tangier, Morocco. Contact our concierge team for bookings, inquiries, and special requests.",
+    "hero": {
+      "title": "LA TERAL Residence",
+      "subtitle": "High-standing Apartments with Prestigious Hotel Services",
+      "description": "LA TERAL offers an exclusive collection of high-standing apartments, combining the independence of a private residence with the refinement of the most prestigious hotel services.",
+      "ctaButtons": [
+        {
+          "text": "Check Availability",
+          "link": "/bookings",
+          "type": "primary"
+        },
+        {
+          "text": "Virtual Tour",
+          "link": "/virtual-tour",
+          "type": "secondary"
+        }
+      ]
+    },
+    "contactForm": {
+      "title": "Reserve Your Stay",
+      "subtitle": "Experience excellence and absolute serenity. Our concierge team is at your service.",
+      "successMessage": "Request sent successfully! Our concierge team will respond within 24 hours.",
+      "fields": {
+        "fullName": {
+          "label": "Full Name",
+          "placeholder": "John Doe",
+          "required": true,
+          "type": "text"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "john@example.com",
+          "required": true,
+          "type": "email"
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "+212 6XX XXX XXX",
+          "required": false,
+          "type": "tel"
+        },
+        "inquiryType": {
+          "label": "Inquiry Type",
+          "required": true,
+          "type": "select",
+          "options": [
+            "Select an inquiry type",
+            "Booking & Availability",
+            "Pricing & Offers",
+            "Corporate Stay",
+            "Long-term Residence",
+            "Special Requests",
+            "General Information"
+          ]
+        },
+        "checkIn": {
+          "label": "Check-in",
+          "required": false,
+          "type": "date"
+        },
+        "checkOut": {
+          "label": "Check-out",
+          "required": false,
+          "type": "date"
+        },
+        "guests": {
+          "label": "Guests",
+          "required": false,
+          "type": "select",
+          "options": [1, 2, 3, 4, 5, 6]
+        },
+        "message": {
+          "label": "Your Message / Special Requests",
+          "placeholder": "Tell us about your stay preferences, special occasions, or any requests...",
+          "required": true,
+          "type": "textarea",
+          "rows": 4
+        }
+      },
+      "submitButton": {
+        "text": "Send Inquiry",
+        "loadingText": "Sending Request..."
+      }
+    },
+    "contactInfo": [
+      {
+        "icon": "MapPin",
+        "title": "Visit Us",
+        "details": [
+          "LA TERAL Residence",
+          "Route de Malabata",
+          "Tangier, Morocco"
+        ],
+        "action": "Get Directions",
+        "link": "https://maps.google.com",
+        "color": "red"
+      },
+      {
+        "icon": "Phone",
+        "title": "Call Us",
+        "details": [
+          "Reservations: +212 539 123 456",
+          "Concierge: +212 639 123 456"
+        ],
+        "action": "Call Now",
+        "link": "tel:+212539123456",
+        "color": "green"
+      },
+      {
+        "icon": "Mail",
+        "title": "Email Us",
+        "details": [
+          "reservations@lateral.ma",
+          "concierge@lateral.ma"
+        ],
+        "action": "Send Email",
+        "link": "mailto:reservations@lateral.ma",
+        "color": "blue"
+      },
+      {
+        "icon": "Clock",
+        "title": "Concierge Service",
+        "details": [
+          "Monday - Friday: 8AM - 10PM",
+          "Saturday - Sunday: 9AM - 9PM",
+          "24/7 Emergency Support"
+        ],
+        "action": "Book a Tour",
+        "link": "/bookings",
+        "color": "purple"
+      }
+    ],
+    "map": {
+      "title": "Find Us Here",
+      "address": "Route de Malabata, Tangier, Morocco",
+      "description": "Immediate proximity to Malabata Beach and Villa Harris Park, steps away from the city's best restaurants and shopping centers.",
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.123456789012!2d-5.812345678901234!3d35.7890123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b8b123456789%3A0x123456789abcdef!2sRoute%20de%20Malabata%2C%20Tanger%2C%20Morocco!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
+    },
+    "stats": [
+      {
+        "icon": "Home",
+        "value": "24",
+        "label": "Exclusive Suites",
+        "color": "blue"
+      },
+      {
+        "icon": "Star",
+        "value": "5★",
+        "label": "Luxury Rating",
+        "color": "yellow"
+      },
+      {
+        "icon": "Waves",
+        "value": "Sea View",
+        "label": "Panoramic",
+        "color": "cyan"
+      },
+      {
+        "icon": "Mountain",
+        "value": "Mountain",
+        "label": "View Available",
+        "color": "emerald"
+      }
+    ],
+    "amenities": [
+      { "icon": "Wifi", "label": "High-Speed WiFi" },
+      { "icon": "Car", "label": "Private Parking" },
+      { "icon": "Utensils", "label": "Room Service" },
+      { "icon": "Coffee", "label": "Welcome Amenities" }
+    ],
+    "testimonial": {
+      "text": "\"A unique experience enhanced by a spectacular panoramic view between sea and mountains\"",
+      "author": "Guest Review"
+    }
+  }
+}
