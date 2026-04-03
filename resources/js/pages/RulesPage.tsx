@@ -27,6 +27,10 @@ import { useI18n } from '@/contexts/I18nContext';
 import { Link } from '@inertiajs/react';
 import RulesHeroSectionComponent from '@/components/rules/RulesHeroSectionComponent';
 import RulesGridComponent from '@/components/rules/RulesGridComponent';
+import RulesDetailedPoliciesComponent from '@/components/rules/RulesDetailedPoliciesComponent';
+import RulesFaqComponent from '@/components/rules/RulesFaqComponent';
+import RulesImportantNoticeComponent from '@/components/rules/RulesImportantNoticeComponent';
+import RulesContactComponent from '@/components/rules/RulesContactComponent';
 
 const RulesPage = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -153,198 +157,22 @@ const RulesPage = () => {
         />
 
         {/* Detailed Policies Section - Brown Theme */}
-        <div className="mb-20 rounded-3xl overflow-hidden shadow-2xl">
-          <div className="grid md:grid-cols-2">
-            <div className="p-8 md:p-10 bg-gradient-to-br from-[#3E2723] to-[#2C1810] text-white">
-              <div className="flex items-center gap-3 mb-6">
-                <Calendar className="w-8 h-8 text-amber-300" />
-                <h3 className="text-2xl font-bold">
-                  {rulesModule.detailedPolicies.booking.title}
-                </h3>
-              </div>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
-                  <span>
-                    {rulesModule.detailedPolicies.booking.items[0]}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
-                  <span>
-                    {rulesModule.detailedPolicies.booking.items[1]}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
-                  <span>
-                    {rulesModule.detailedPolicies.booking.items[2]}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <XCircle className="w-5 h-5 text-amber-300 mt-0.5 flex-shrink-0" />
-                  <span>
-                    {rulesModule.detailedPolicies.booking.items[3]}
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <div className="p-8 md:p-10 bg-gradient-to-br from-[#F5EDE6] to-[#EFE3D9]">
-              <div className="flex items-center gap-3 mb-6">
-                <HeartHandshake className="w-8 h-8 text-[#5C3A21]" />
-                <h3 className="text-2xl font-bold text-[#2C1810]">
-                  {rulesModule.detailedPolicies.service.title}
-                </h3>
-              </div>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#5C3A21] mt-0.5 flex-shrink-0" />
-                  <span className="text-[#3E2723]">
-                    {rulesModule.detailedPolicies.service.items[0]}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#5C3A21] mt-0.5 flex-shrink-0" />
-                  <span className="text-[#3E2723]">
-                    {rulesModule.detailedPolicies.service.items[1]}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-[#5C3A21] mt-0.5 flex-shrink-0" />
-                  <span className="text-[#3E2723]">
-                    {rulesModule.detailedPolicies.service.items[2]}
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Smile className="w-5 h-5 text-[#5C3A21] mt-0.5 flex-shrink-0" />
-                  <span className="text-[#3E2723]">
-                    {rulesModule.detailedPolicies.service.items[3]}
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <RulesDetailedPoliciesComponent rulesModule={rulesModule} />
 
         {/* FAQ Section - Brown Theme */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-[#E6D5C3] px-4 py-1 rounded-full mb-4">
-              <Gift className="w-4 h-4 text-[#5C3A21]" />
-              <span className="text-sm font-medium text-[#5C3A21]">
-                {rulesModule.faqSection.badge}
-              </span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2C1810] mb-4">
-              {rulesModule.faqSection.title}
-            </h2>
-            <p className="text-lg text-[#5C3A21]">
-              {rulesModule.faqSection.subtitle}
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto space-y-4">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white border border-[#E6D5C3] rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
-              >
-                <button
-                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-[#FDF8F5] transition-colors"
-                >
-                  <span className="font-semibold text-[#2C1810]">{faq.question}</span>
-                  {openFaq === index ? (
-                    <ChevronUp className="w-5 h-5 text-[#5C3A21]" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-[#5C3A21]" />
-                  )}
-                </button>
-                {openFaq === index && (
-                  <div className="px-6 pb-5 text-[#5C3A21] border-t border-[#E6D5C3] pt-3 leading-relaxed">
-                    {faq.answer}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+        <RulesFaqComponent 
+          rulesModule={rulesModule}
+          faqs={faqs}
+          setOpenFaq={setOpenFaq}
+          openFaq={openFaq}
+        />
 
         {/* Important Notice - Brown Theme */}
-        <div className="bg-gradient-to-r from-amber-50 to-amber-100/50 border border-amber-200 rounded-2xl p-6 mb-20 shadow-md">
-          <div className="flex items-start gap-4">
-            <AlertTriangle className="w-8 h-8 text-amber-600 flex-shrink-0" />
-            <div>
-              <h3 className="font-bold text-amber-800 text-lg mb-1">
-                {rulesModule.importantNotice.title}
-              </h3>
-              <p className="text-amber-700 mb-2 leading-relaxed">
-                {rulesModule.importantNotice.content}
-              </p>
-              <p className="text-sm text-amber-600">
-                {rulesModule.importantNotice.lastUpdated}
-              </p>
-            </div>
-          </div>
-        </div>
+        <RulesImportantNoticeComponent rulesModule={rulesModule} />
 
         {/* Contact Section - Brown Theme */}
-        <div className="bg-gradient-to-r from-[#2C1810] to-[#3E2723] rounded-3xl text-white p-8 md:p-12 shadow-xl">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {rulesModule.contactSection.title}
-            </h2>
-            <p className="text-amber-100/80 max-w-2xl mx-auto">
-              {rulesModule.contactSection.subtitle}
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            <div className="text-center group">
-              <div className="bg-[#5C3A21] group-hover:bg-[#C68B5E] w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 transform group-hover:scale-110">
-                <Phone className="w-6 h-6" />
-              </div>
-              <p className="font-semibold text-lg">
-                {rulesModule.contactSection.phone}
-              </p>
-              <p className="text-amber-100/70 text-sm">
-                {rulesModule.contactSection.phoneNumber}
-              </p>
-            </div>
-            <div className="text-center group">
-              <div className="bg-[#5C3A21] group-hover:bg-[#C68B5E] w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 transform group-hover:scale-110">
-                <Mail className="w-6 h-6" />
-              </div>
-              <p className="font-semibold text-lg">
-                {rulesModule.contactSection.email}
-              </p>
-              <p className="text-amber-100/70 text-sm">
-                {rulesModule.contactSection.emailAddress}
-              </p>
-            </div>
-            <div className="text-center group">
-              <div className="bg-[#5C3A21] group-hover:bg-[#C68B5E] w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 transition-all duration-300 transform group-hover:scale-110">
-                <MapPin className="w-6 h-6" />
-              </div>
-              <p className="font-semibold text-lg">
-                {rulesModule.contactSection.visit}
-              </p>
-              <p className="text-amber-100/70 text-sm">
-                {rulesModule.contactSection.address}
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-center gap-5 mt-10">
-            <button className="bg-[#5C3A21] hover:bg-[#C68B5E] p-3 rounded-full transition-all duration-300 transform hover:scale-110">
-              <Facebook className="w-5 h-5" />
-            </button>
-            <button className="bg-[#5C3A21] hover:bg-[#C68B5E] p-3 rounded-full transition-all duration-300 transform hover:scale-110">
-              <Instagram className="w-5 h-5" />
-            </button>
-            <button className="bg-[#5C3A21] hover:bg-[#C68B5E] p-3 rounded-full transition-all duration-300 transform hover:scale-110">
-              <Twitter className="w-5 h-5" />
-            </button>
-          </div>
-        </div>
+        <RulesContactComponent rulesModule={rulesModule} />
+        
       </div>
     </div>
   );
