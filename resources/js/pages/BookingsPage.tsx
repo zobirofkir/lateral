@@ -119,26 +119,6 @@ const BookingPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Testimonial */}
-            <div className="bg-gradient-to-r from-[#3E2723] to-[#5D4037] rounded-3xl p-6 text-white">
-              <div className="flex gap-3 mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
-                ))}
-              </div>
-              <p className="text-gray-200 italic mb-3">
-                "An absolutely magical experience! The attention to detail and warm hospitality made our stay unforgettable."
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center">
-                  <span className="font-bold text-white">JD</span>
-                </div>
-                <div>
-                  <p className="font-semibold">John Doe</p>
-                  <p className="text-amber-300 text-xs">Verified Guest</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right Column - Booking Form */}
