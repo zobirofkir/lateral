@@ -68,21 +68,25 @@ export function useSLider() {
        */
       let message = '';
       if (locale === 'fr') {
-          message = `📅 *NOUVELLE RÉSERVATION* 📅\n\n` +
-                    `🏠 *Séjour à Dar Chems*\n` +
-                    `📆 *Arrivée :* ${formatDate(finalCheckIn)}\n` +
-                    `📆 *Départ :* ${formatDate(finalCheckOut)}\n` +
-                    `👥 *Nombre de voyageurs :* ${guests}\n\n` +
-                    `🔗 *Statut :* En attente de confirmation\n`;
+          message = `🏨 *NOUVELLE RSULTATION LA TERAL* 🏨\n\n` +
+                    `✨ *Résidence de standing supérieur*\n` +
+                    `📍 *LA TERAL – Vue mer & montagnes*\n\n` +
+                    `📅 *Arrivée :* ${formatDate(finalCheckIn)}\n` +
+                    `📅 *Départ :* ${formatDate(finalCheckOut)}\n` +
+                    `👥 *Voyageurs :* ${guests}\n\n` +
+                    `🔖 *Statut :* En attente de confirmation\n` +
+                    `🕒 *Action requise :* Vérifier disponibilité\n`;
       } else {
-          message = `📅 *NEW BOOKING* 📅\n\n` +
-                    `🏠 *Stay at Dar Chems*\n` +
-                    `📆 *Check-in :* ${formatDate(finalCheckIn)}\n` +
-                    `📆 *Check-out :* ${formatDate(finalCheckOut)}\n` +
-                    `👥 *Number of guests :* ${guests}\n\n` +
-                    `🔗 *Status :* Pending confirmation\n`;
+          message = `🏨 *NEW LA TERAL INQUIRY* 🏨\n\n` +
+                    `✨ *High-standing residence*\n` +
+                    `📍 *LA TERAL – Sea & mountain view*\n\n` +
+                    `📅 *Check-in :* ${formatDate(finalCheckIn)}\n` +
+                    `📅 *Check-out :* ${formatDate(finalCheckOut)}\n` +
+                    `👥 *Guests :* ${guests}\n\n` +
+                    `🔖 *Status :* Pending confirmation\n` +
+                    `🕒 *Action required :* Check availability\n`;
       }
-      
+
       /**
        * Encode the message for WhatsApp URL
        */
