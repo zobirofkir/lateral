@@ -1,14 +1,14 @@
 <?php
 
+use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\PageViewController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
 /**
  * Welcome page
  */
-Route::get('/', function() {
-    return inertia('WelcomePage');
-});
+Route::get('/', [HomePageController::class , 'home']);
 
 /**
  * Discover Page
