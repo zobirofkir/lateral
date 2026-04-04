@@ -109,32 +109,10 @@ const RoomsComponent = () => {
                     {room.title}
                   </h3>
 
-                  {/* Size */}
-                  <div className="flex items-center gap-2 mb-3 text-sm text-[#5C2E0B]/70">
-                    <span className="font-medium">📐 {room.size}</span>
-                  </div>
-
                   {/* Description */}
                   <p className="text-[#5C2E0B] text-sm leading-relaxed mb-4 line-clamp-3">
                     {room.description}
                   </p>
-
-                  {/* Features */}
-                  <div className="flex flex-wrap gap-2 mb-5">
-                    {room.features?.slice(0, 3).map((feature: string, idx: number) => (
-                      <span
-                        key={idx}
-                        className="text-xs px-2 py-1 bg-amber-100 text-[#6B3410] rounded-full"
-                      >
-                        {feature}
-                      </span>
-                    ))}
-                    {room.features?.length > 3 && (
-                      <span className="text-xs px-2 py-1 bg-amber-100 text-[#6B3410] rounded-full">
-                        +{room.features.length - 3}
-                      </span>
-                    )}
-                  </div>
 
                   {/* See More Button */}
                   <Link
