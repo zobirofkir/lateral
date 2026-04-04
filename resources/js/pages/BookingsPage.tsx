@@ -1,9 +1,15 @@
 import React from 'react';
 import { Calendar, Users, Check, ArrowRight, Star, Wifi, Coffee, Car, Wind, Home, Clock, Shield, Sparkles, Heart } from 'lucide-react';
 import { useBooking } from '@/hooks/useBooking';
+import { useI18n } from '@/contexts/I18nContext';
 
 
 const BookingPage: React.FC = () => {
+
+  const { t } = useI18n();
+  const bookingModule = t.bookingModule || {};
+
+
 
   const {
     formData,
