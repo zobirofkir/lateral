@@ -30,7 +30,8 @@ const RightColumnComponent: React.FC<RightColumnComponentProps> = ({
     setIsGuestDropdownOpen,
     today,
     defaultCheckIn,
-    defaultCheckOut
+    defaultCheckOut,
+    handleWhatsAppRedirect
 }) => {
     const { t, locale } = useI18n();
     
@@ -60,7 +61,7 @@ const RightColumnComponent: React.FC<RightColumnComponentProps> = ({
                     </p>
                 </div>
 
-                <form onSubmit={handleBooking} className="space-y-5">
+                <form onSubmit={handleWhatsAppRedirect} className="space-y-5">
                     {/* Check-in Date */}
                     <div className="relative">
                         <label className="block text-sm font-semibold text-[#4A2508] mb-2 flex items-center gap-2">

@@ -24,7 +24,8 @@ const SliderComponent = () => {
     handleBooking,
     today,
     defaultCheckIn,
-    defaultCheckOut
+    defaultCheckOut,
+    handleWhatsAppRedirect
   } = useSLider();
 
   return (
@@ -55,6 +56,7 @@ const SliderComponent = () => {
                 today={today}
                 defaultCheckIn={defaultCheckIn}
                 defaultCheckOut={defaultCheckOut}
+                handleWhatsAppRedirect={handleWhatsAppRedirect}
               />
 
             </div>
