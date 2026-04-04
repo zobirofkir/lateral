@@ -4,7 +4,7 @@ import RoomsComponent from '@/components/rooms/RoomsComponent'
 import SliderComponent from '@/components/slider/SliderComponent'
 import WhyComponent from '@/components/why/WhyComponent'
 
-export default function WelcomePage({ views, googleReviews, googleRating }) {
+export default function WelcomePage({ views, googleReviews, googleRating, googleName, reviews }) {
   return (
     <div>
       <SliderComponent 
@@ -16,6 +16,8 @@ export default function WelcomePage({ views, googleReviews, googleRating }) {
           <GoogleReviewsComponent 
             googleReviews={googleReviews}
             googleRating={googleRating}
+            googleName={googleName}
+            reviews={reviews}
           />      
       </section>
       <RoomsComponent />

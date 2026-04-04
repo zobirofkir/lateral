@@ -27,19 +27,25 @@ class HomePageController extends Controller
         $placeId = config('services.google.places_id');
         $apiKey = config('services.google.places_key');
 
-        $googleResponse = Http::get('https://maps.googleapis.com/maps/api/place/details/json', [
+        $response = Http::get('https://maps.googleapis.com/maps/api/place/details/json', [
             'place_id' => $placeId,
-            'fields' => 'rating,user_ratings_total',
+            'fields' => 'name,rating,user_ratings_total,reviews',
             'key' => $apiKey,
-        ])->json();
+        ]);
 
-        $googleReviews = $googleResponse['result']['user_ratings_total'] ?? 0;
-        $googleRating = $googleResponse['result']['rating'] ?? 0;
+        $data = $response->json();
+
+        $googleReviews = $data['result']['user_ratings_total'] ?? 0;
+        $googleRating  = $data['result']['rating'] ?? 0;
+        $googleName    = $data['result']['name'] ?? null;
+        $reviews       = $data['result']['reviews'] ?? [];
 
         return Inertia::render('WelcomePage', [
             'views' => $view->views,
             'googleReviews' => $googleReviews,
             'googleRating' => $googleRating,
+            'googleName' => $googleName,
+            'reviews' => $reviews
         ]);
     }
 }
