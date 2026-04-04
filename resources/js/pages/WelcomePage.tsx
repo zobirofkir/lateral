@@ -12,10 +12,12 @@ export default function WelcomePage({ views, googleReviews, googleRating }) {
       />
       <AboutComponent />
       <WhyComponent />
-      <GoogleReviewsComponent 
-        googleReviews={googleReviews}
-        googleRating={googleRating}
-      />      
+      <section className='lg:px-0 px-4' >
+          <GoogleReviewsComponent 
+            googleReviews={googleReviews}
+            googleRating={googleRating}
+          />      
+      </section>
       <RoomsComponent />
     </div>
   );
