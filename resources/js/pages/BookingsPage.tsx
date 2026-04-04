@@ -126,8 +126,7 @@ const BookingPage: React.FC = () => {
                 `👥 *Guests :* ${formData.guests} guest${formData.guests > 1 ? 's' : ''}\n\n` +
                 `━━━━━━━━━━━━━━━━━━━━━━━\n\n` +
                 `✅ *Status :* Pending confirmation\n` +
-                `📍 *Property :* Lateral\n\n` +
-                `_Auto-generated message_`;
+                `📍 *Property :* Lateral\n\n`;
     }
     
     const encodedMessage = encodeURIComponent(message);
