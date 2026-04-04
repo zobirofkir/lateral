@@ -1,106 +1,106 @@
 {
-  "pageName": "Page de Réservation - Lateral",
+  "pageName": "Booking Page - Lateral",
   "route": "/booking",
-  "composant": "BookingPage",
+  "component": "BookingPage",
   "description": "Page de réservation de retreat de luxe avec sélection de dates, gestion des invités et intégration WhatsApp",
   "heroSection": {
-    "titre": "Lateral",
-    "sousTitre": "Votre Retraite Luxueuse",
-    "accroche": "Découvrez un confort et une élégance inégalés au cœur du paradis",
+    "title": "Lateral",
+    "subtitle": "Votre Retraite Luxueuse",
+    "tagline": "Vivez un confort et une élégance inégalés au cœur du paradis",
     "badge": {
-      "icone": "Star",
-      "texte": "Retraite de Luxe"
+      "icon": "Star",
+      "text": "Retraite de Luxe"
     },
-    "imageFond": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&h=600&fit=crop",
-    "degrade": "from-[#3E2723] to-[#5D4037]"
+    "backgroundImage": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&h=600&fit=crop",
+    "gradient": "from-[#3E2723] to-[#5D4037]"
   },
   "leftColumn": {
     "welcomeCard": {
-      "titre": "Bienvenue au Paradis",
-      "description": "Réservez votre séjour à Lateral et profitez d'une expérience inoubliable dans nos espaces magnifiquement aménagés. Parfait pour les réunions familiales, les escapades romantiques ou les retraites paisibles.",
-      "icone": "Home",
-      "caracteristiques": [
+      "title": "Bienvenue au Paradis",
+      "description": "Réservez votre séjour chez Lateral et vivez une expérience inoubliable dans nos espaces magnifiquement aménagés. Parfait pour les réunions familiales, les escapades romantiques ou les retraites paisibles.",
+      "icon": "Home",
+      "features": [
         {
-          "icone": "Sparkles",
-          "titre": "Expérience Luxueuse",
+          "icon": "Sparkles",
+          "title": "Expérience de Luxe",
           "description": "Confort et élégance premium"
         },
         {
-          "icone": "Heart",
-          "titre": "Service Personnalisé",
+          "icon": "Heart",
+          "title": "Service Personnalisé",
           "description": "Adapté à vos besoins"
         },
         {
-          "icone": "Shield",
-          "titre": "Sûr & Sécurisé",
-          "description": "Sécurité et support 24/7"
+          "icon": "Shield",
+          "title": "Sûr et Sécurisé",
+          "description": "Sécurité et assistance 24/7"
         }
       ]
     },
-    "equipements": {
-      "titre": "Équipements Premium",
-      "icone": "Sparkles",
-      "elements": [
-        { "icone": "Wifi", "nom": "WiFi Gratuit", "couleur": "text-blue-600" },
-        { "icone": "Wind", "nom": "Climatisation", "couleur": "text-cyan-600" },
-        { "icone": "Car", "nom": "Parking Privé", "couleur": "text-green-600" },
-        { "icone": "Clock", "nom": "Service 24/7", "couleur": "text-purple-600" },
-        { "icone": "Coffee", "nom": "Petit-déjeuner", "couleur": "text-amber-600" },
-        { "icone": "Home", "nom": "Piscine", "couleur": "text-teal-600" }
+    "amenities": {
+      "title": "Équipements Premium",
+      "icon": "Sparkles",
+      "items": [
+        { "icon": "Wifi", "name": "WiFi gratuit", "color": "text-blue-600" },
+        { "icon": "Wind", "name": "Climatisation", "color": "text-cyan-600" },
+        { "icon": "Car", "name": "Parking privé", "color": "text-green-600" },
+        { "icon": "Clock", "name": "Service 24/7", "color": "text-purple-600" },
+        { "icon": "Coffee", "name": "Petit-déjeuner", "color": "text-amber-600" },
+        { "icon": "Home", "name": "Piscine", "color": "text-teal-600" }
       ]
     }
   },
   "bookingForm": {
-    "titre": "Réservez Votre Séjour",
-    "sousTitre": "Remplissez les détails pour commencer",
-    "champs": {
-      "dateArrivee": {
+    "title": "Réservez Votre Séjour",
+    "subtitle": "Remplissez les détails pour commencer",
+    "fields": {
+      "checkIn": {
         "label": "Date d'arrivée",
-        "icone": "Calendar",
+        "icon": "Calendar",
         "type": "date",
-        "requis": true,
+        "required": true,
         "validation": {
-          "min": "aujourdhui"
+          "min": "today"
         }
       },
-      "dateDepart": {
+      "checkOut": {
         "label": "Date de départ",
-        "icone": "Calendar",
+        "icon": "Calendar",
         "type": "date",
-        "requis": true,
+        "required": true,
         "validation": {
-          "min": "dateArrivee"
+          "min": "checkIn"
         }
       },
-      "nombreVoyageurs": {
+      "guests": {
         "label": "Nombre de voyageurs",
-        "icone": "Users",
+        "icon": "Users",
         "type": "number",
         "min": 1,
         "max": 20,
-        "valeurParDefaut": 2
+        "default": 2
       }
     },
-    "boutonSoumettre": {
-      "texte": "Réserver sur WhatsApp",
-      "icone": "ArrowRight",
-      "texteChargement": "Traitement en cours...",
-      "desactiveLorsSoumission": true
+    "submitButton": {
+      "text": "Réserver sur WhatsApp",
+      "icon": "ArrowRight",
+      "loadingText": "Traitement en cours...",
+      "disabledOnSubmit": true
     },
-    "texteConditions": "En réservant, vous acceptez nos conditions générales",
-    "iconeConditions": "Shield"
+    "termsText": "En réservant, vous acceptez nos conditions générales",
+    "termsIcon": "Shield"
   },
   "bookingSummary": {
-    "titre": "Résumé de la Réservation",
-    "icone": "Check",
-    "champs": ["dateArrivee", "dateDepart", "nuits", "nombreVoyageurs"],
-    "texteNuit": {
-      "singulier": "nuit",
-      "pluriel": "nuits"
+    "title": "Récapitulatif de la Réservation",
+    "icon": "Check",
+    "fields": ["checkIn", "checkOut", "nights", "guests"],
+    "nightText": {
+      "singular": "nuit",
+      "plural": "nuits"
     },
-    "texteVoyageur": {
-      "singulier": "voyageur",
-      "pluriel": "voyageurs"
+    "guestText": {
+      "singular": "voyageur",
+      "plural": "voyageurs"
     }
   }
 }
