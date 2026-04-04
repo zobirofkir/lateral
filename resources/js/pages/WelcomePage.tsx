@@ -6,11 +6,7 @@ import WhyComponent from '@/components/why/WhyComponent'
 export default function WelcomePage({ views }) {
   return (
     <div>
-      <SliderComponent />
-
-      <div className="text-center py-4 text-gray-500">
-        👀 Nombre de vues : {views}
-      </div>
+      <SliderComponent views={views} />
 
       <AboutComponent />
       <WhyComponent />

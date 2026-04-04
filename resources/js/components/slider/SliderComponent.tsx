@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useI18n } from '@/contexts/I18nContext';
 
-const SliderComponent = () => {
+const SliderComponent = ({views}) => {
 
   const { t, locale } = useI18n();
   
@@ -91,6 +91,7 @@ const SliderComponent = () => {
           toggleMute={toggleMute}
           isPlaying={isPlaying}
           isMuted={isMuted}
+          views={views}
       />
 
       {/* Scroll Indicator */}
