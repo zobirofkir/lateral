@@ -1,0 +1,167 @@
+{
+  "pageName": "Booking Page - Lateral",
+  "route": "/booking",
+  "component": "BookingPage",
+  "description": "Luxury retreat booking page with date selection, guest management, and WhatsApp integration",
+  "heroSection": {
+    "title": "Lateral",
+    "subtitle": "Your Luxurious Retreat",
+    "tagline": "Experience unparalleled comfort and elegance in the heart of paradise",
+    "badge": {
+      "icon": "Star",
+      "text": "Luxury Retreat"
+    },
+    "backgroundImage": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&h=600&fit=crop",
+    "gradient": "from-[#3E2723] to-[#5D4037]"
+  },
+  "leftColumn": {
+    "welcomeCard": {
+      "title": "Welcome to Paradise",
+      "description": "Book your stay at Lateral and enjoy an unforgettable experience in our beautifully appointed spaces. Perfect for family gatherings, romantic getaways, or peaceful retreats.",
+      "icon": "Home",
+      "features": [
+        {
+          "icon": "Sparkles",
+          "title": "Luxury Experience",
+          "description": "Premium comfort and elegance"
+        },
+        {
+          "icon": "Heart",
+          "title": "Personalized Service",
+          "description": "Tailored to your needs"
+        },
+        {
+          "icon": "Shield",
+          "title": "Safe & Secure",
+          "description": "24/7 security and support"
+        }
+      ]
+    },
+    "amenities": {
+      "title": "Premium Amenities",
+      "icon": "Sparkles",
+      "items": [
+        { "icon": "Wifi", "name": "Free WiFi", "color": "text-blue-600" },
+        { "icon": "Wind", "name": "Air Conditioning", "color": "text-cyan-600" },
+        { "icon": "Car", "name": "Private Parking", "color": "text-green-600" },
+        { "icon": "Clock", "name": "24/7 Service", "color": "text-purple-600" },
+        { "icon": "Coffee", "name": "Breakfast", "color": "text-amber-600" },
+        { "icon": "Home", "name": "Swimming Pool", "color": "text-teal-600" }
+      ]
+    }
+  },
+  "bookingForm": {
+    "title": "Book Your Stay",
+    "subtitle": "Fill in the details to get started",
+    "fields": {
+      "checkIn": {
+        "label": "Check-in Date",
+        "icon": "Calendar",
+        "type": "date",
+        "required": true,
+        "validation": {
+          "min": "today"
+        }
+      },
+      "checkOut": {
+        "label": "Check-out Date",
+        "icon": "Calendar",
+        "type": "date",
+        "required": true,
+        "validation": {
+          "min": "checkIn"
+        }
+      },
+      "guests": {
+        "label": "Number of Guests",
+        "icon": "Users",
+        "type": "number",
+        "min": 1,
+        "max": 20,
+        "default": 2
+      }
+    },
+    "submitButton": {
+      "text": "Book Now on WhatsApp",
+      "icon": "ArrowRight",
+      "loadingText": "Processing...",
+      "disabledOnSubmit": true
+    },
+    "termsText": "By booking, you agree to our terms and conditions",
+    "termsIcon": "Shield"
+  },
+  "bookingSummary": {
+    "title": "Booking Summary",
+    "icon": "Check",
+    "fields": ["checkIn", "checkOut", "nights", "guests"],
+    "nightText": {
+      "singular": "night",
+      "plural": "nights"
+    },
+    "guestText": {
+      "singular": "guest",
+      "plural": "guests"
+    }
+  },
+  "styling": {
+    "primaryColors": {
+      "dark": "#3E2723",
+      "medium": "#5D4037",
+      "light": "#8D6E63",
+      "accent": "#F59E0B"
+    },
+    "gradients": {
+      "hero": "from-[#3E2723] to-[#5D4037]",
+      "formHeader": "from-[#3E2723] to-[#5D4037]",
+      "submitButton": "from-[#3E2723] to-[#5D4037]",
+      "submitButtonHover": "from-[#2C1A14] to-[#3E2723]",
+      "summary": "from-amber-50 to-orange-50"
+    },
+    "borderRadius": {
+      "card": "3xl",
+      "input": "xl",
+      "button": "xl"
+    },
+    "animations": {
+      "fadeIn": "0.3s ease-out",
+      "hoverScale": "scale-[1.02]"
+    }
+  },
+  "hooks": {
+    "useBooking": {
+      "returns": [
+        "formData",
+        "errors",
+        "isSubmitting",
+        "handleInputChange",
+        "handleGuestsChange",
+        "handleWhatsAppRedirect",
+        "formatDate",
+        "calculateNights",
+        "nights",
+        "defaultCheckIn",
+        "defaultCheckOut",
+        "today"
+      ]
+    }
+  },
+  "icons": {
+    "used": [
+      "Calendar",
+      "Users",
+      "Check",
+      "ArrowRight",
+      "Star",
+      "Wifi",
+      "Coffee",
+      "Car",
+      "Wind",
+      "Home",
+      "Clock",
+      "Shield",
+      "Sparkles",
+      "Heart"
+    ],
+    "source": "lucide-react"
+  }
+}
