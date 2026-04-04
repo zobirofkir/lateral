@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import { motion } from "framer-motion";
 import { BedDouble, Calendar, Mail, Phone, Star, Users } from 'lucide-react';
+import { usePage } from '@inertiajs/react';
 
 const ShowRoomRightColumnComponent = ({
     fadeInRight,
     room,
-    whatsappPhoneNumber = "212123456789", // Default number, replace with actual
-    locale = "en", // 'en' or 'fr'
-    handleBooking // Optional callback
+    locale = "en", 
+    handleBooking
 }) => {
     const [checkIn, setCheckIn] = useState('');
     const [checkOut, setCheckOut] = useState('');
     const [guests, setGuests] = useState('2 Guests');
+    const { whatsappPhoneNumber } = usePage().props;
     
     const defaultCheckIn = "2024-01-15";
     const defaultCheckOut = "2024-01-18";
