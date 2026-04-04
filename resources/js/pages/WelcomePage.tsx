@@ -10,14 +10,12 @@ export default function WelcomePage({ views, googleReviews, googleRating }) {
       <SliderComponent 
         views={views} 
       />
-
+      <AboutComponent />
+      <WhyComponent />
       <GoogleReviewsComponent 
         googleReviews={googleReviews}
         googleRating={googleRating}
-      />
-
-      <AboutComponent />
-      <WhyComponent />
+      />      
       <RoomsComponent />
     </div>
   );
