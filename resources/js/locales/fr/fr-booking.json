@@ -1,9 +1,9 @@
 {
-  "nomPage": "Page de Réservation - Lateral",
+  "pageName": "Page de Réservation - Lateral",
   "route": "/booking",
   "composant": "BookingPage",
   "description": "Page de réservation de retreat de luxe avec sélection de dates, gestion des invités et intégration WhatsApp",
-  "sectionHero": {
+  "heroSection": {
     "titre": "Lateral",
     "sousTitre": "Votre Retraite Luxueuse",
     "accroche": "Découvrez un confort et une élégance inégalés au cœur du paradis",
@@ -14,8 +14,8 @@
     "imageFond": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&h=600&fit=crop",
     "degrade": "from-[#3E2723] to-[#5D4037]"
   },
-  "colonneGauche": {
-    "carteBienvenue": {
+  "leftColumn": {
+    "welcomeCard": {
       "titre": "Bienvenue au Paradis",
       "description": "Réservez votre séjour à Lateral et profitez d'une expérience inoubliable dans nos espaces magnifiquement aménagés. Parfait pour les réunions familiales, les escapades romantiques ou les retraites paisibles.",
       "icone": "Home",
@@ -50,7 +50,7 @@
       ]
     }
   },
-  "formulaireReservation": {
+  "bookingForm": {
     "titre": "Réservez Votre Séjour",
     "sousTitre": "Remplissez les détails pour commencer",
     "champs": {
@@ -90,7 +90,7 @@
     "texteConditions": "En réservant, vous acceptez nos conditions générales",
     "iconeConditions": "Shield"
   },
-  "resumeReservation": {
+  "bookingSummary": {
     "titre": "Résumé de la Réservation",
     "icone": "Check",
     "champs": ["dateArrivee", "dateDepart", "nuits", "nombreVoyageurs"],
@@ -102,66 +102,5 @@
       "singulier": "voyageur",
       "pluriel": "voyageurs"
     }
-  },
-  "stylisme": {
-    "couleursPrimaires": {
-      "sombre": "#3E2723",
-      "moyen": "#5D4037",
-      "clair": "#8D6E63",
-      "accent": "#F59E0B"
-    },
-    "degrades": {
-      "hero": "from-[#3E2723] to-[#5D4037]",
-      "enteteFormulaire": "from-[#3E2723] to-[#5D4037]",
-      "boutonSoumettre": "from-[#3E2723] to-[#5D4037]",
-      "boutonSoumettreSurvol": "from-[#2C1A14] to-[#3E2723]",
-      "resume": "from-amber-50 to-orange-50"
-    },
-    "rayonBordure": {
-      "carte": "3xl",
-      "champ": "xl",
-      "bouton": "xl"
-    },
-    "animations": {
-      "apparition": "0.3s ease-out",
-      "echelleSurvol": "scale-[1.02]"
-    }
-  },
-  "hooks": {
-    "useBooking": {
-      "retours": [
-        "formData",
-        "errors",
-        "isSubmitting",
-        "handleInputChange",
-        "handleGuestsChange",
-        "handleWhatsAppRedirect",
-        "formatDate",
-        "calculateNights",
-        "nights",
-        "defaultCheckIn",
-        "defaultCheckOut",
-        "today"
-      ]
-    }
-  },
-  "icones": {
-    "utilisees": [
-      "Calendar",
-      "Users",
-      "Check",
-      "ArrowRight",
-      "Star",
-      "Wifi",
-      "Coffee",
-      "Car",
-      "Wind",
-      "Home",
-      "Clock",
-      "Shield",
-      "Sparkles",
-      "Heart"
-    ],
-    "source": "lucide-react"
   }
 }
