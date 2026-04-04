@@ -4,8 +4,15 @@ import RightColumnComponent from './RightColumnComponent';
 import VideoControlsComponent from './VideoControlsComponent';
 import ScrollIndecatorComponent from './ScrollIndecatorComponent';
 import { useSLider } from '@/hooks/useSlider';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
+import { useI18n } from '@/contexts/I18nContext';
 
 const SliderComponent = () => {
+
+  const { t, locale } = useI18n();
+  
+  const bookingContent = t.leftslide?.booking || {};
 
   const {
     isPlaying,
@@ -59,6 +66,20 @@ const SliderComponent = () => {
                 handleWhatsAppRedirect={handleWhatsAppRedirect}
               />
 
+            </div>
+
+            <div className='lg:hidden block'>
+              {/* Submit Button */}
+              <motion.button
+                  type="submit"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full bg-gradient-to-r from-[#6B3410] to-[#4A2508] text-white py-3.5 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group"
+                  onClick={() => window.location.href = '/bookings'}
+              >
+                  <span>{bookingContent.submit || (locale === 'fr' ? "Réservez maintenant" : "Book Now")}</span>
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </motion.button>
             </div>
           </div>
         </div>
