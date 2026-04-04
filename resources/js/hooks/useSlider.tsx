@@ -1,4 +1,5 @@
 import { useI18n } from '@/contexts/I18nContext';
+import { usePage } from '@inertiajs/react';
 import { useState, useRef, useEffect } from 'react';
 
 export function useSLider() {
@@ -44,14 +45,14 @@ export function useSLider() {
   const defaultCheckIn = today;
   const defaultCheckOut = new Date(Date.now() + 86400000).toISOString().split('T')[0];
 
+  const { whatsappPhoneNumber } = usePage().props;
+
   const handleWhatsAppRedirect = (e: React.FormEvent) => {
       e.preventDefault();
       
-      // Get the actual values (use defaults if empty)
       const finalCheckIn = checkIn || defaultCheckIn;
       const finalCheckOut = checkOut || defaultCheckOut;
       
-      // Format dates for better readability
       const formatDate = (dateString: string) => {
           if (!dateString) return 'Not specified';
           const date = new Date(dateString);
@@ -86,7 +87,7 @@ export function useSLider() {
        * Encode the message for WhatsApp URL
        */
       const encodedMessage = encodeURIComponent(message);
-      const whatsappUrl = `https://wa.me/212619920942?text=${encodedMessage}`;
+      const whatsappUrl = `https://wa.me/${whatsappPhoneNumber}?text=${encodedMessage}`;
       
       window.open(whatsappUrl, '_blank');
       
