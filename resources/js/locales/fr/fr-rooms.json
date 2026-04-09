@@ -16,6 +16,7 @@
   "form_call": "Appeler",
   "form_email": "E-mail",
   "form_rated": "Noté 5/5 par nos clients",
+  "cta_show_room": "Contactez-nous pour connaître nos offres spéciales",
   "rooms": [
     {
       "id": 1,

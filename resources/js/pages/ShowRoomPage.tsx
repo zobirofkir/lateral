@@ -68,7 +68,7 @@ const ShowRoomPage = () => {
         <ShowRoomIncludedFeatures roomsContent={roomsContent} />
         
         {/* CTA Section */}
-        <ShowRoomCtaComponent />
+        <ShowRoomCtaComponent roomsContent={roomsContent}/>
       </div>
     </div>
   );
