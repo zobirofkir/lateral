@@ -41,10 +41,6 @@ const ShowRoomHeroSectionComponent = ({
                 <span className="px-3 py-1 bg-[#D4B896] text-[#3E2723] text-sm font-semibold rounded-full">
                   {room.size}
                 </span>
-                <span className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-sm font-semibold rounded-full flex items-center gap-2">
-                  <Users className="w-4 h-4" />
-                  {room.capacity}
-                </span>
               </div>
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 max-w-4xl">
                 {room.title}

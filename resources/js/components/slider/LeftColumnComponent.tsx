@@ -8,10 +8,7 @@ const LeftColumnComponent = () => {
   const leftslideContent = t.leftslide || {};
   
   const featuresList = [
-    leftslideContent.features?.panoramic_view,
-    leftslideContent.features?.spa,
-    leftslideContent.features?.restaurant,
-    leftslideContent.features?.pool
+    leftslideContent.features?.panoramic_view
   ].filter(Boolean);
 
   return (
