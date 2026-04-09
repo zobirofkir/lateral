@@ -21,9 +21,6 @@ const ContactHeroSectionComponent = ({
               <Link href={'/bookings'} className="bg-amber-600 hover:bg-amber-700 px-6 py-3 rounded-lg font-semibold transition-colors">
                 {contactModule.page.hero.ctaButtons[0].text}
               </Link>
-              <Link href={'/virtual-tour'} className="bg-white/10 hover:bg-white/20 backdrop-blur-sm px-6 py-3 rounded-lg font-semibold transition-colors">
-                {contactModule.page.hero.ctaButtons[1].text}
-              </Link>
             </div>
           </div>
         </div>
