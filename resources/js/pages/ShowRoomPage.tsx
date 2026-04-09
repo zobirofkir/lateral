@@ -56,6 +56,7 @@ const ShowRoomPage = () => {
             staggerContainer={staggerContainer}
             room={room}
             getFeatureIcon={getFeatureIcon}
+            roomsContent={roomsContent}
           />
           
           {/* Right Column - Booking Card */}

@@ -6,7 +6,8 @@ const ShowRoomLeftColumnComponent = ({
     fadeInUp,
     staggerContainer,
     room,
-    getFeatureIcon
+    getFeatureIcon,
+    roomsContent
 }) => {
   return (
     <>
@@ -38,7 +39,7 @@ const ShowRoomLeftColumnComponent = ({
             >
               <h2 className="text-2xl md:text-3xl font-bold text-[#3E2723] mb-6 flex items-center gap-2">
                 <span className="w-1 h-8 bg-[#D4B896] rounded-full"></span>
-                Amenities & Features
+                {roomsContent.amenties}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {room.features?.map((feature: string, idx: number) => {
