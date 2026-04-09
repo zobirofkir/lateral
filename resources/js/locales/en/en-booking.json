@@ -44,9 +44,7 @@
         { "icon": "Wifi", "name": "Free WiFi", "color": "text-blue-600" },
         { "icon": "Wind", "name": "Air Conditioning", "color": "text-cyan-600" },
         { "icon": "Car", "name": "Private Parking", "color": "text-green-600" },
-        { "icon": "Clock", "name": "24/7 Service", "color": "text-purple-600" },
-        { "icon": "Coffee", "name": "Breakfast", "color": "text-amber-600" },
-        { "icon": "Home", "name": "Swimming Pool", "color": "text-teal-600" }
+        { "icon": "Clock", "name": "24/7 Service", "color": "text-purple-600" }
       ]
     }
   },
