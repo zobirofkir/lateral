@@ -3,7 +3,7 @@ import { Phone } from 'lucide-react'
 import { motion } from "framer-motion";
 
 
-const ShowRoomCtaComponent = (roomsContent) => {
+const ShowRoomCtaComponent = ({roomsContent}) => {
   return (
     <>
         <motion.div
@@ -17,7 +17,7 @@ const ShowRoomCtaComponent = (roomsContent) => {
             className="inline-flex items-center gap-2 px-8 py-3 bg-transparent border-2 border-[#6B3410] text-[#6B3410] rounded-lg font-semibold hover:bg-[#6B3410] hover:text-white transition-all duration-300"
           >
             <Phone className="w-4 h-4" />
-            
+            {roomsContent.cta_show_room}
           </Link>
         </motion.div>
     </>
