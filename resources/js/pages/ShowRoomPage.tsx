@@ -60,7 +60,7 @@ const ShowRoomPage = () => {
           />
           
           {/* Right Column - Booking Card */}
-          <ShowRoomRightColumnComponent fadeInRight={fadeInRight} room={room} />
+          <ShowRoomRightColumnComponent roomsContent={roomsContent} fadeInRight={fadeInRight} room={room} />
 
         </div>
         
