@@ -174,6 +174,19 @@
     }
   ],
   "see_more": "Voir plus",
-  "included_features": "Tous nos appartements incluent : Climatisation centralisée, Wi-Fi haut débit gratuit, parking gratuit et sécurisé, service de ménage gratuit, service de sécurité 24/24 (gardien, caméras extérieures, extincteurs), lave-linge privative, Smart TV dans chaque chambre, literie de qualité anti-allergique, fenêtres insonorisées, accès par ascenseur à tous les étages, et eau chaude/froide disponible en continu.",
+  "included_features_title": "Tous nos appartements incluent",
+  "included_features": [
+    "Climatisation centralisée",
+    "Wi-Fi Haut Débit Gratuit",
+    "Parking gratuit et sécurisé",
+    "Service de ménage gratuit pendant tout le séjour",
+    "Sécurité 24h/24 (gardien, caméras extérieures, extincteurs)",
+    "Lave-linge privatif",
+    "Smart TV dans chaque chambre",
+    "Literie de qualité anti-allergique",
+    "Fenêtres insonorisées",
+    "Accès par ascenseur à tous les étages",
+    "Eau chaude et froide disponible en continu"
+  ],
   "view_all_offers": "Voir toutes nos offres"
 }
