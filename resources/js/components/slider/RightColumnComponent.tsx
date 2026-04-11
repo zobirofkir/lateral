@@ -165,12 +165,6 @@ const RightColumnComponent: React.FC<RightColumnComponentProps> = ({
                     </p>
                 </form>
 
-                {/* Special Offer Badge */}
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#D4A574] text-[#2A1506] px-4 py-1 rounded-full text-xs font-semibold shadow-lg whitespace-nowrap">
-                    {bookingContent.special_offer || (locale === 'fr' 
-                        ? "🔥 -20% sur votre première réservation"
-                        : "🔥 -20% on your first booking")}
-                </div>
             </div>
         </motion.div>
     )
